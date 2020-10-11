@@ -1,20 +1,20 @@
-import  React from "react";
-import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import About from './Components/About'
+import Checkbox from "./Components/Checkboxes";
 import Nav from './Components/Nav'
-import Checkboxes from './Components/Checkboxes'
 function App() {
-    return ( 
+    return (
         <Router>
-            <div> 
+            <div>
                 <Nav />
-            <Switch>
-            <Route path="/" exact component={Checkboxes} />
-            <Route path="/about" component={About}/>
-            </Switch>
+                <Switch>
+                    <Route path="/" component={Checkbox} />
+                    <Route path="/about" component={About} />
+                </Switch>
             </div>
-            </Router>
-      )
+        </Router>
+    )
 }
 
 export default App
