@@ -1,11 +1,18 @@
 import  React from "react";
+import {BrowserRouter as Router,Route, Switch} from 'react-router-dom'
+import About from './Components/About'
+import Checkboxes from './Components/Checkboxes'
 function App() {
-    return ( <div> 
-        <input type="checkbox" /> 
-        <p> Wash dishes</p>
-        <p>Clean <input type="checkbox" /> </p>
-         <p><input type="checkbox"/> Cook </p>
-             </div> )
+    return ( 
+        <Router>
+            <div> 
+            <Switch>
+            <Route path="/" exact component={Checkboxes} />
+            <Route path="/about" component={About}/>
+            </Switch>
+            </div>
+            </Router>
+      )
 }
 
 export default App
