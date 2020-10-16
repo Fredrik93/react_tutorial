@@ -13,7 +13,8 @@ function Nav() {
         <nav>
             <h3>Logo</h3>
             <ul className="nav-links">
-                <Link style={navStyle} to="/" ><li>Checkboxes </li></Link>
+                <Link style={navStyle} to="/time">Time</Link>
+                <Link style={navStyle} to="/checkboxes" ><li>Checkboxes </li></Link>
                 <Link style={navStyle} to="/about" ><li>About</li></Link>
             </ul>
 

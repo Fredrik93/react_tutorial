@@ -16,7 +16,7 @@ function Checkbox() {
 
     }
     return (
-        <h1>hi</h1>
+        <h1>Checkbox Page</h1>
     )
 }
 
