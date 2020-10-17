@@ -1,26 +1,29 @@
 import React from 'react'
 
 let timeOfDay
+const stil = {
+    backgroundColor: "Green",
+    fontSize: 25
+}
 
 function whatTimeOfTheDay() {
-    const date = new Date()
+    const date = new Date(2020, 10, 17, 9)
     const hours = date.getHours()
     if (hours < 12) {
         timeOfDay = "Morning"
+        stil.color = "yellow";
+
     } else if (hours >= 12 && hours < 17) {
         timeOfDay = "Afternoon"
     } else {
         timeOfDay = "Night"
+        stil.color = "pink"
     }
 }
 
 
 function Time() {
-    const stil = {
-        color: "yellow",
-        backgroundColor: "Green",
-        fontSize: 25
-    }
+
     whatTimeOfTheDay();
     return (<div> <h1 style={stil}>Good {timeOfDay} </h1> </div>)
 }
