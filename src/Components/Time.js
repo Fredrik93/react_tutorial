@@ -16,8 +16,13 @@ function whatTimeOfTheDay() {
 
 
 function Time() {
+    const stil = {
+        color: "yellow",
+        backgroundColor: "Green",
+        fontSize: 25
+    }
     whatTimeOfTheDay();
-    return (<div> <h1>Good {timeOfDay} </h1> </div>)
+    return (<div> <h1 style={stil}>Good {timeOfDay} </h1> </div>)
 }
 
 export default Time
