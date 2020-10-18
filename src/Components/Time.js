@@ -7,7 +7,7 @@ const stil = {
 }
 
 function whatTimeOfTheDay() {
-    const date = new Date(2020, 10, 17, 9)
+    const date = new Date()
     const hours = date.getHours()
     if (hours < 12) {
         timeOfDay = "Morning"
