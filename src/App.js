@@ -5,12 +5,14 @@ import Checkbox from "./Components/Checkboxes";
 import Nav from './Components/Nav'
 import Time from './Components/Time'
 import Todos from './Components/Todos'
+import Contacts from './Components/Contacts'
 function App() {
     return (
         <Router>
             <div>
                 <Nav />
                 <Switch>
+                    <Route path="/contacts" component={Contacts} />
                     <Route path="/todos" component={Todos} />
                     <Route path="/checkboxes" component={Checkbox} />
                     <Route path="/about" component={About} />
