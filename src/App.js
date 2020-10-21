@@ -6,6 +6,7 @@ import Nav from './Components/Nav'
 import Time from './Components/Time'
 import Todos from './Components/Todos'
 import Contacts from './Components/Contacts'
+import Jokes from './Components/Jokes'
 function App() {
     return (
         <Router>
@@ -14,6 +15,7 @@ function App() {
                 <Switch>
                     <Route path="/contacts" component={Contacts} />
                     <Route path="/todos" component={Todos} />
+                    <Route path="/jokes" component={Jokes} />
                     <Route path="/checkboxes" component={Checkbox} />
                     <Route path="/about" component={About} />
                     <Route path="/time" component={Time} />
