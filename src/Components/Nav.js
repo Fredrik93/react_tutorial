@@ -7,11 +7,15 @@ function Nav() {
         color: 'white'
 
     }
+    const logoStyle = {
+        color: 'white',
+        textDecoration: 'none'
+    }
 
 
     return (
         <nav>
-            <h3>Logo</h3>
+            <Link style={logoStyle} to="/" > <h3>Home</h3>  </Link>
             <ul className="nav-links">
                 <Link style={navStyle} to="/jokes" > Jokes </Link>
                 <Link style={navStyle} to="/contacts"> Contacts </Link>

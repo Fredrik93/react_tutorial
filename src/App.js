@@ -7,12 +7,14 @@ import Time from './Components/Time'
 import Todos from './Components/Todos'
 import Contacts from './Components/Contacts'
 import Jokes from './Components/Jokes'
+import Home from './Components/Home'
 function App() {
     return (
         <Router>
             <div>
                 <Nav />
                 <Switch>
+                    <Route path="/" exact component={Home} />
                     <Route path="/contacts" component={Contacts} />
                     <Route path="/todos" component={Todos} />
                     <Route path="/jokes" component={Jokes} />
