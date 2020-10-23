@@ -18,9 +18,13 @@ function Joke(props) {
         marginTop: "20vh",
         marginLeft: "20vh",
         borderBottom: "1px solid gray",
-        fontSize: 30
+        fontSize: 30,
+
     }
-    return (<div style={styling}> { showQuestion(props)} {showPunchLine(props)}   </div>)
+    return (<div>
+        <h3 style={{ display: props.jokes.question ? "block" : "none" }}> Question: {props.jokes.question} </h3>
+        <h3 style={{ color: !props.jokes.question && "#888888" }}> Punchline: {props.jokes.punchline}</h3>
+    </div>)
 }
 
 
