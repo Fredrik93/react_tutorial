@@ -1,11 +1,18 @@
 import React from 'react'
-
+import jokeData from './jokesData'
 import Joke from './Joke'
 function Jokes() {
+
+    const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    const doubleNums = nums.map(function (num) {
+        return num * 2
+    })
+    console.log(doubleNums)
+
     return (<div>
         <Joke jokes={{
-            question: "What’s the best thing about Switzerland?",
-            punchline: "I don’t know, but the flag is a big plus. "
+            question: "da",
+            punchline: "s. "
         }} />
         <Joke jokes={{
             question: "How does a rabbi make coffee? ",
