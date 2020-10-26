@@ -23,8 +23,8 @@ function Joke(props) {
 
     }
     return (<div>
-        <h3 style={{ display: props.jokes.question ? "block" : "none" }}> Question: {props.jokes.question} </h3>
-        <h3 style={{ color: !props.jokes.question && "#888888" }}> Punchline: {props.jokes.punchline}</h3>
+        <h3 style={{ display: props.question ? "block" : "none" }}> Question: {props.question} </h3>
+        <h3 style={{ color: !props.question && "#888888" }}> Punchline: {props.punchline}</h3>
     </div>)
 }
 
