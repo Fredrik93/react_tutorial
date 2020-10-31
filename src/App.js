@@ -9,6 +9,7 @@ import Contacts from './Components/Contacts'
 import Jokes from './Components/Jokes'
 import Home from './Components/Home'
 import Products from './Components/Products'
+import Cars from './Components/Cars'
 function App() {
     return (
         <Router>
@@ -16,6 +17,7 @@ function App() {
                 <Nav />
                 <Switch>
                     <Route path="/" exact component={Home} />
+                    <Route path="/cars" component={Cars} />
                     <Route path="/products" component={Products} />
                     <Route path="/contacts" component={Contacts} />
                     <Route path="/todos" component={Todos} />

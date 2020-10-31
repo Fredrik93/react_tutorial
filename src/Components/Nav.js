@@ -17,6 +17,7 @@ function Nav() {
         <nav>
             <Link style={logoStyle} to="/" > <h3>Home</h3>  </Link>
             <ul className="nav-links">
+                <Link style={navStyle} to="/cars">Cars </Link>
                 <Link style={navStyle} to="/products" >Products</Link>
                 <Link style={navStyle} to="/jokes" > Jokes </Link>
                 <Link style={navStyle} to="/contacts"> Contacts </Link>
