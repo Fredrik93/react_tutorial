@@ -17,11 +17,12 @@ function List() {
         width: "30vh",
         textAlign: "center",
         marginLeft: "auto",
-        marginRight: "auto"
-
-
+        marginRight: "auto",
+        color: "black",
+        marginTop: "0.2vh",
     }
-    return (<div>
+
+    return (<div style={{ marginTop: '20vh' }} >
         <Link style={styling} to="/cars">Cars </Link>
         <Link style={styling} to="/products" >Products</Link>
         <Link style={styling} to="/jokes" > Jokes </Link>
