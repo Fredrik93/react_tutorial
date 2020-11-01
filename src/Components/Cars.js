@@ -8,6 +8,7 @@ const carComponent = carData.map(function (car) {
 function Cars() {
 
     return (<div>
+        <Car make="volvo" year="100" />
         {carComponent}
     </div>)
 }

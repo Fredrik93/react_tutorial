@@ -10,6 +10,7 @@ import Jokes from './Components/Jokes'
 import Home from './Components/Home'
 import Products from './Components/Products'
 import Cars from './Components/Cars'
+import List from './Components/List'
 function App() {
     return (
         <Router>
@@ -26,6 +27,7 @@ function App() {
                     <Route path="/about" component={About} />
                     <Route path="/time" component={Time} />
                 </Switch>
+                <List />
             </div>
         </Router>
     )
