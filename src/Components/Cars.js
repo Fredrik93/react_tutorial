@@ -1,12 +1,14 @@
 import React from 'react'
-import cars from './carData'
+import carData from './carData'
 import Car from './Car'
-const carComponent = cars.map(function (car) {
-    return <Car key={car.id} make={car.make} />
+const carComponent = carData.map(function (car) {
+    return <Car key={car.id} make={car.make} year={car.year} />
 })
 
 function Cars() {
 
-    return (<div> {carComponent} </div>)
+    return (<div>
+        {carComponent}
+    </div>)
 }
 export default Cars

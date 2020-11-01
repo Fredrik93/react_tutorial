@@ -1,10 +1,12 @@
 const cars = [
     {
         id: 1,
-        name: "Volvo"
+        make: "Volvo",
+        year: 2000
     }, {
         id: 2,
-        make: "Bmw"
+        make: "Bmw",
+        year: 2020
     }
 ]
 
