@@ -11,8 +11,6 @@ import Home from './Components/Home'
 import Products from './Components/Products'
 import Cars from './Components/Cars'
 import List from './Components/List'
-import ProjectButton from './Components/ProjectsButton'
-
 
 
 function App() {
@@ -30,7 +28,7 @@ function App() {
         <Router>
             <div >
                 <Nav />
-                <ProjectButton />
+
                 <Switch >
                     <div style={styling} >
                         <Route path="/" exact component={Home} />

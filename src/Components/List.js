@@ -1,12 +1,6 @@
 import React from 'react'
-import Time from './Time'
-import Todos from './Todos'
-import Contacts from './Contacts'
-import Jokes from './Jokes'
-import Home from './Home'
-import Products from './Products'
-import Cars from './Cars'
 import { Link } from 'react-router-dom'
+import ViewProjectButton from './Buttons'
 
 function List() {
     const styling = {
@@ -30,7 +24,10 @@ function List() {
         <Link style={styling} to="/todos"> Todos </Link>
         <Link style={styling} to="/time">Time</Link>
         <Link style={styling} to="/checkboxes" >Checkboxes</Link>
+        <ViewProjectButton />
 
-    </div>)
+
+    </div >
+    )
 }
 export default List
