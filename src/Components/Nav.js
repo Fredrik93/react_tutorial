@@ -5,9 +5,11 @@ import NavbarCollapse from 'react-bootstrap/esm/NavbarCollapse'
 function Nav() {
 
     const navStyle = {
-        color: 'white'
+        color: 'white',
+        textDecoration: 'none'
 
     }
+
     const logoStyle = {
         color: 'white',
         textDecoration: 'none'

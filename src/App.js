@@ -13,21 +13,34 @@ import Cars from './Components/Cars'
 import List from './Components/List'
 
 function App() {
+    const styling = {
+        fontSize: 24,
+        display: "block",
+        textDecoration: "none",
+        width: "30vh",
+        textAlign: "center",
+        marginLeft: "auto",
+        marginRight: "auto",
+        marginTop: "2vh",
+    }
     return (
         <Router>
-            <div>
+            <div >
                 <Nav />
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/thingsivedone" component={List} />
-                    <Route path="/cars" component={Cars} />
-                    <Route path="/products" component={Products} />
-                    <Route path="/contacts" component={Contacts} />
-                    <Route path="/todos" component={Todos} />
-                    <Route path="/jokes" component={Jokes} />
-                    <Route path="/checkboxes" component={Checkbox} />
-                    <Route path="/about" component={About} />
-                    <Route path="/time" component={Time} />
+                <Switch >
+                    <div style={styling} >
+                        <Route path="/" exact component={Home} />
+                        <Route path="/thingsivedone" component={List} />
+                        <Route path="/cars" component={Cars} />
+                        <Route path="/products" component={Products} />
+                        <Route path="/contacts" component={Contacts} />
+                        <Route path="/todos" component={Todos} />
+                        <Route path="/jokes" component={Jokes} />
+                        <Route path="/checkboxes" component={Checkbox} />
+                        <Route path="/about" component={About} />
+                        <Route path="/time" component={Time} />
+                    </div>
+
                 </Switch>
             </div>
         </Router>
