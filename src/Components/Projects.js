@@ -29,12 +29,7 @@ function List() {
         color: "black",
         marginTop: "0.2vh",
     }
-    const projectData = [
-        {
-            id: 1,
-            title: "Cars"
-        }
-    ]
+
     return (
 
         <div>
