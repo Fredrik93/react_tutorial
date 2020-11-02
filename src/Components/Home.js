@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Jumbotron } from 'react-bootstrap'
+import ViewProjectButton from './Buttons'
 
 
 function Home() {
@@ -14,6 +15,7 @@ function Home() {
                 <Button variant="primary">Learn more</Button>
             </p>
         </Jumbotron>
+        <ViewProjectButton />
     </div>)
 }
 

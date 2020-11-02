@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-function ProjectsButton() {
+function ViewProjectsButton() {
     const styling = {
         backgroundColor: "#4CAF50",
         border: "none",
@@ -11,8 +11,6 @@ function ProjectsButton() {
         display: "inline-block",
         fontSize: "16px",
         marginTop: "5vh",
-        float: "right",
-        marginRight: "2vh",
         borderRadius: "5px"
 
     }
@@ -20,4 +18,4 @@ function ProjectsButton() {
         <Link to="/projects" style={styling} >View projects </Link>
     </div>)
 }
-export default ProjectsButton
+export default ViewProjectsButton

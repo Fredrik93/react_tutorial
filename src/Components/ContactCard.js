@@ -8,7 +8,7 @@ function ContactCard(props) {
     }
     return (<div>
 
-        <img style={style} src={props.contact.imgUrl}></img>
+        <img style={style} src={props.contact.imgUrl} alt="contact" ></img>
         <h2>{props.contact.name}</h2>
         <p> Phone: {props.contact.phone}</p>
         <p> Email: {props.contact.email} </p>
