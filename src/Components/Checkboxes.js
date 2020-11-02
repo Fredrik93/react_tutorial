@@ -14,9 +14,11 @@ function Checkbox() {
 
 
     }
+    console.log(items)
     return (
-        <h1>Checkbox Page</h1>
-    )
+        <div>
+            < h1 > Checkbox Page</h1 >
+        </div>)
 }
 
 export default Checkbox
