@@ -62,3 +62,14 @@ input[type=checkbox]:focus{
 body{
  background-color: whitesmoke;
 }
+
+/* JUMBOTRON STYLE HERE */
+.jumbotron{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, 
+    rgba(2,0,36,1) 13%, 
+    rgba(39,39,143,1) 38%, 
+    rgba(0,212,255,1) 83%);
+  color:white !important;
+  height:auto;
+  }
