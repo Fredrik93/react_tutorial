@@ -10,7 +10,7 @@ import Jokes from './Components/Jokes'
 import Home from './Components/Home'
 import Products from './Components/Products'
 import Cars from './Components/Cars'
-import List from './Components/List'
+import Projects from './Components/Projects'
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
                     <div  >
                         <Route path="/" exact component={Home} />
                         <div style={styling} >
-                            <Route path="/projects" component={List} />
+                            <Route path="/projects" component={Projects} />
                             <Route path="/cars" component={Cars} />
                             <Route path="/products" component={Products} />
                             <Route path="/contacts" component={Contacts} />
