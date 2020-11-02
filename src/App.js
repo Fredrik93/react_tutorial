@@ -30,18 +30,19 @@ function App() {
                 <Nav />
 
                 <Switch >
-                    <div style={styling} >
+                    <div  >
                         <Route path="/" exact component={Home} />
-                        <Route path="/projects" component={List} />
-                        <Route path="/cars" component={Cars} />
-                        <Route path="/products" component={Products} />
-                        <Route path="/contacts" component={Contacts} />
-                        <Route path="/todos" component={Todos} />
-                        <Route path="/jokes" component={Jokes} />
-                        <Route path="/checkboxes" component={Checkbox} />
-                        <Route path="/about" component={About} />
-                        <Route path="/time" component={Time} />
-
+                        <div style={styling} >
+                            <Route path="/projects" component={List} />
+                            <Route path="/cars" component={Cars} />
+                            <Route path="/products" component={Products} />
+                            <Route path="/contacts" component={Contacts} />
+                            <Route path="/todos" component={Todos} />
+                            <Route path="/jokes" component={Jokes} />
+                            <Route path="/checkboxes" component={Checkbox} />
+                            <Route path="/about" component={About} />
+                            <Route path="/time" component={Time} />
+                        </div>
                     </div>
 
                 </Switch>
