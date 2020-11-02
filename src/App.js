@@ -11,6 +11,9 @@ import Home from './Components/Home'
 import Products from './Components/Products'
 import Cars from './Components/Cars'
 import List from './Components/List'
+import ProjectButton from './Components/ProjectsButton'
+
+
 
 function App() {
     const styling = {
@@ -27,10 +30,11 @@ function App() {
         <Router>
             <div >
                 <Nav />
+                <ProjectButton />
                 <Switch >
                     <div style={styling} >
                         <Route path="/" exact component={Home} />
-                        <Route path="/thingsivedone" component={List} />
+                        <Route path="/projects" component={List} />
                         <Route path="/cars" component={Cars} />
                         <Route path="/products" component={Products} />
                         <Route path="/contacts" component={Contacts} />
@@ -39,9 +43,11 @@ function App() {
                         <Route path="/checkboxes" component={Checkbox} />
                         <Route path="/about" component={About} />
                         <Route path="/time" component={Time} />
+
                     </div>
 
                 </Switch>
+
             </div>
         </Router>
     )
