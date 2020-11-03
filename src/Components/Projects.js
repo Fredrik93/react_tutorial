@@ -1,34 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-import ViewProjectButton from './Buttons'
-import Card from 'react-bootstrap/Card'
 import CustomizedCard from './Card'
 function List() {
-    const stylingBtn = {
-        backgroundColor: "#4CAF50",
-        border: "none",
-        color: "white",
-        padding: "15px 32px",
-        textAlign: "center",
-        textDecoration: "none",
-        display: "inline-block",
-        fontSize: "16px",
-        marginTop: "5vh",
-        borderRadius: "5px"
 
-    }
-    const styling = {
-        fontSize: 24,
-        border: "2px solid grey",
-        display: "block",
-        textDecoration: "none",
-        width: "30vh",
-        textAlign: "center",
-        marginLeft: "auto",
-        marginRight: "auto",
-        color: "black",
-        marginTop: "0.2vh",
-    }
 
     return (
 
