@@ -4,10 +4,9 @@ import schoolProducts from './schoolProducts'
 
 const productComponent = schoolProducts.map(item => <Product key={item.id} name={item.name} />)
 
-function Products(item) {
+function Products() {
     return (
         <div>
-
             {productComponent}
         </div>
     )

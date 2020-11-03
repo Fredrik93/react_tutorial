@@ -30,6 +30,12 @@ const products = [
         price: 1,
         description: "snackysnack"
     },
+    {
+        id: 7,
+        name: "Bicycle",
+        price: 100,
+        description: "Really good for going to school"
+    }
 
 
 ]
