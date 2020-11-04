@@ -23,6 +23,7 @@ function App() {
         marginLeft: "auto",
         marginRight: "auto",
         marginTop: "2vh",
+
     }
     return (
         <Router>

@@ -3,9 +3,10 @@ import CustomizedCard from './Card'
 function List() {
 
 
+
     return (
 
-        <div>
+        <div  >
 
             <CustomizedCard
                 title="Cars"

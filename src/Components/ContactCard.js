@@ -4,7 +4,7 @@ function ContactCard(props) {
     const style = {
         width: "50vh",
         paddingTop: "5vh",
-        border: '1px solid gray'
+        border: '1px solid gray',
     }
     return (<div>
 

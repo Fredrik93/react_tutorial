@@ -12,7 +12,8 @@ function CustomizedCard(props) {
         display: "inline-block",
         fontSize: "16px",
         marginTop: "5vh",
-        borderRadius: "5px"
+        borderRadius: "5px",
+
 
     }
     return (<div>
@@ -24,6 +25,7 @@ function CustomizedCard(props) {
                 <Card.Link style={stylingBtn} href={props.href}>{props.linkName} </Card.Link>
             </Card.Body>
         </Card>
+        <br />
     </div>)
 }
 export default CustomizedCard
