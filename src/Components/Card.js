@@ -13,6 +13,7 @@ function CustomizedCard(props) {
         fontSize: "16px",
         marginTop: "5vh",
         borderRadius: "5px",
+        marginBottom: "4vh"
 
     }
 
@@ -21,6 +22,7 @@ function CustomizedCard(props) {
         border: "2px solid #e7e7e7",
         borderRadius: "4px",
         padding: ".5rem",
+        backgroundColor: "darkGray"
 
     }
 
