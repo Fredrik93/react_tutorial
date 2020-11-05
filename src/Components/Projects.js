@@ -2,11 +2,16 @@ import React from 'react'
 import CustomizedCard from './Card'
 function List() {
 
-
+    const cardsStyling = {
+        display: "grid",
+        gridTemplateColumns: "repeat(3, 1fr)",
+        gridAutoRows: "auto",
+        gridGap: "1rem"
+    }
 
     return (
 
-        <div className="cards" >
+        <div style={cardsStyling} >
 
             <CustomizedCard
                 title="Cars"

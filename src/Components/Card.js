@@ -16,8 +16,18 @@ function CustomizedCard(props) {
 
     }
 
-    return (<div className="card" >
-        <Card >
+    const cardStyle = {
+
+        border: "2px solid #e7e7e7",
+
+        borderRadius: "4px",
+
+        padding: ".5rem"
+
+    }
+
+    return (<div className="cardStyle" >
+        <Card style={cardStyle} >
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Subtitle>{props.subtitle}</Card.Subtitle>

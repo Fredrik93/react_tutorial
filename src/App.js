@@ -33,7 +33,7 @@ function App() {
                 <Switch >
                     <div  >
                         <Route path="/" exact component={Home} />
-                        <div style={styling} >
+                        <div >
                             <Route path="/projects" component={Projects} />
                             <Route path="/cars" component={Cars} />
                             <Route path="/products" component={Products} />
