@@ -15,11 +15,7 @@ function CustomizedCard(props) {
         borderRadius: "5px",
 
     }
-    const cardStyle = {
-        width: '30vh',
-        marginTop: "5px",
 
-    }
     return (<div className="card" >
         <Card >
             <Card.Body>
