@@ -1,12 +1,16 @@
 import React from 'react'
 import CustomizedCard from './Card'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 function List() {
 
     const cardsStyling = {
         display: "grid",
-        gridTemplateColumns: "repeat(3, 1fr)",
+        gridTemplateColumns: "repeat(3, 30vh)",
         gridAutoRows: "auto",
-        gridGap: "1rem"
+        gridGap: "0.5rem",
+        margin: "5vh",
+        justifyContent: "center"
     }
 
     return (
@@ -34,6 +38,7 @@ function List() {
                 sampleText="lil project"
                 linkName="View" />
 
+
             <CustomizedCard
                 title="Contacts"
                 subtitle="small javascript practice"
@@ -53,20 +58,9 @@ function List() {
                 href="/time"
                 linkName="View" />
 
+
+
         </div>
     )
-    // return (<div style={{ marginTop: '20vh' }} >
-    //     <Link style={styling} to="/cars">Cars </Link>
-    //     <Link style={styling} to="/products" >Products</Link>
-    //     <Link style={styling} to="/jokes" > Jokes </Link>
-    //     <Link style={styling} to="/contacts"> Contacts </Link>
-    //     <Link style={styling} to="/todos"> Todos </Link>
-    //     <Link style={styling} to="/time">Time</Link>
-    //     <Link style={styling} to="/checkboxes" >Checkboxes</Link>
-    //     <ViewProjectButton />
-
-
-    // </div >
-    // )
 }
 export default List
