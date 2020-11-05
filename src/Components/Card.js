@@ -14,10 +14,14 @@ function CustomizedCard(props) {
         marginTop: "5vh",
         borderRadius: "5px",
 
+    }
+    const cardStyle = {
+        width: '30vh',
+        marginTop: "5px",
 
     }
-    return (<div>
-        <Card style={{ width: '18rem' }} >
+    return (<div className="card" >
+        <Card >
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
                 <Card.Subtitle>{props.subtitle}</Card.Subtitle>
@@ -25,7 +29,7 @@ function CustomizedCard(props) {
                 <Card.Link style={stylingBtn} href={props.href}>{props.linkName} </Card.Link>
             </Card.Body>
         </Card>
-        <br />
+
     </div>)
 }
 export default CustomizedCard
