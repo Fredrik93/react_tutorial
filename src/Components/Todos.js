@@ -4,7 +4,7 @@ import TodoItems from './TodoItem'
 import todosData from './todosData'
 function Todos() {
 
-    const todosComponent = todosData.map(function (chore) {
+    const todosComponent = todosData.map(chore => {
         return (<TodoItems chore={chore.text} />)
     })
 
