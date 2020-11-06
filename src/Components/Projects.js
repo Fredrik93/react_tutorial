@@ -12,7 +12,6 @@ function List() {
         <div style={cardsStyling}>
 
             <Carousel >
-
                 <Carousel.Item>
 
                     <CustomizedCard
