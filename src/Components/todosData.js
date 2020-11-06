@@ -1,23 +1,28 @@
 const todosData = [
     {
         id: 1,
-        text: "Take out trash"
+        text: "Take out trash",
+        completed: true
     },
     {
         id: 2,
-        text: "Grocery shopping"
+        text: "Grocery shopping",
+        completed: true
     },
     {
         id: 3,
-        text: "Clean gecko tank"
+        text: "Clean gecko tank",
+        completed: false
     },
     {
         id: 4,
-        text: "Mow lawn"
+        text: "Mow lawn",
+        completed: true
     },
     {
         id: 5,
-        text: "Catch up on last man on earth"
+        text: "Catch up on last man on earth",
+        completed: false
     },
 ]
 export default todosData
