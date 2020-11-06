@@ -1,7 +1,6 @@
 import React from 'react'
 import CustomizedCard from './Card'
 import Carousel from 'react-bootstrap/Carousel'
-import CarouselItem from 'react-bootstrap/CarouselItem'
 function List() {
 
     const cardsStyling = {
