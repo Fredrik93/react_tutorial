@@ -12,38 +12,37 @@ import Products from './Components/Products'
 import Cars from './Components/Cars'
 import Projects from './Components/Projects'
 
+class App extends React.Component {
+    render() {
+        return (
+            <Router>
+                <div >
+                    <Nav />
 
-function App() {
-
-    return (
-
-        <Router>
-            <div >
-                <Nav />
-
-                <Switch >
-                    <>
-                        <div  >
-                            <Route path="/" exact component={Home} />
-                            <div >
-                                <Route path="/projects" component={Projects} />
-                                <Route path="/cars" component={Cars} />
-                                <Route path="/products" component={Products} />
-                                <Route path="/contacts" component={Contacts} />
-                                <Route path="/todos" component={Todos} />
-                                <Route path="/jokes" component={Jokes} />
-                                <Route path="/checkboxes" component={Checkbox} />
-                                <Route path="/about" component={About} />
-                                <Route path="/time" component={Time} />
+                    <Switch >
+                        <>
+                            <div  >
+                                <Route path="/" exact component={Home} />
+                                <div >
+                                    <Route path="/projects" component={Projects} />
+                                    <Route path="/cars" component={Cars} />
+                                    <Route path="/products" component={Products} />
+                                    <Route path="/contacts" component={Contacts} />
+                                    <Route path="/todos" component={Todos} />
+                                    <Route path="/jokes" component={Jokes} />
+                                    <Route path="/checkboxes" component={Checkbox} />
+                                    <Route path="/about" component={About} />
+                                    <Route path="/time" component={Time} />
+                                </div>
                             </div>
-                        </div>
-                    </>
-                </Switch>
+                        </>
+                    </Switch>
 
-            </div>
-        </Router>
+                </div>
+            </Router>
 
-    )
+        )
+    }
 }
 
 export default App
