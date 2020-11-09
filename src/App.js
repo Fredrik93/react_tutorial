@@ -8,7 +8,7 @@ import Todos from './Components/Todos/Todos'
 import Contacts from './Components/Contacts/Contacts'
 import Jokes from './Components/Jokes/Jokes'
 import Home from './Components/Home'
-import Products from './Components/Products'
+import Products from './Components/Products/Products'
 import Cars from './Components/Cars/Cars'
 import Projects from './Components/Cards/Projects'
 import StatePractice from "./Components/StatePractice";
