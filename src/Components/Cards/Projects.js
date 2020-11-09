@@ -1,7 +1,6 @@
 import React from 'react'
 import CustomizedCard from './Card'
 import Carousel from 'react-bootstrap/Carousel'
-import { Link } from 'react-router-dom'
 function List() {
 
     const cardsStyling = {
@@ -71,8 +70,13 @@ function List() {
                         linkName="View"
                     />
                 </Carousel.Item>
-
-
+                <Carousel.Item>
+                    <CustomizedCard
+                        title="logged In"
+                        href="/loggedIn"
+                        linkName="View"
+                    />
+                </Carousel.Item>
 
             </Carousel>
         </div>

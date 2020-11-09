@@ -4,13 +4,13 @@ import About from './Components/About'
 import Checkbox from "./Components/Checkboxes";
 import Nav from './Components/Nav'
 import Time from './Components/Time'
-import Todos from './Components/Todos'
-import Contacts from './Components/Contacts'
-import Jokes from './Components/Jokes'
+import Todos from './Components/Todos/Todos'
+import Contacts from './Components/Contacts/Contacts'
+import Jokes from './Components/Jokes/Jokes'
 import Home from './Components/Home'
 import Products from './Components/Products'
-import Cars from './Components/Cars'
-import Projects from './Components/Projects'
+import Cars from './Components/Cars/Cars'
+import Projects from './Components/Cards/Projects'
 import StatePractice from "./Components/StatePractice";
 import LoggedIn from "./Components/LoggedIn";
 
