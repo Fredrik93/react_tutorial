@@ -11,14 +11,29 @@ import Home from './Components/Home'
 import Products from './Components/Products'
 import Cars from './Components/Cars'
 import Projects from './Components/Projects'
-import { propTypes } from "react-bootstrap/esm/Image";
 
 class App extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = { myAPIResponse: "" }
+    }
+    callAPI() {
+        fetch('http://localhost:3001/testAPI')
+            .then(res => res.text())
+            .then(res => this.setState({ myAPIResponse: res }))
+    }
+
+    componentDidMount() {
+        this.callAPI()
+    }
+
     render() {
         return (
             <Fragment>
+
                 <Router>
                     <div >
+
                         <Nav />
 
                         <Switch >
@@ -42,8 +57,7 @@ class App extends React.Component {
 
                     </div>
                 </Router>
-                <Header username="fredfred" />
-                <Greeting />
+                <p className="App-intro"> {this.state.myAPIResponse} </p>
             </Fragment>
         )
     }
