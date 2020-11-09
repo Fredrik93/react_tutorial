@@ -14,7 +14,7 @@ class LoggedIn extends Component {
         } else {
             wordDisplay = "out"
         }
-        return <div> Youre currently logged {wordDisplay} </div>
+        return <div className="todo-list" > Youre currently logged {wordDisplay} </div>
     }
 }
 
