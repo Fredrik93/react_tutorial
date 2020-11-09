@@ -8,15 +8,13 @@ class LoggedIn extends Component {
         }
     }
     render() {
-        const isLogged = this.state.isLoggedin
-        function log() {
-            if (isLogged) {
-                return <h3> in </h3>
-            } else {
-                return <h3> Out</h3>
-            }
+        let wordDisplay
+        if (this.state.isLoggedin === true) {
+            wordDisplay = "in"
+        } else {
+            wordDisplay = "out"
         }
-        return <div> Youre currently logged {log()} </div>
+        return <div> Youre currently logged {wordDisplay} </div>
     }
 }
 
