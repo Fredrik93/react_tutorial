@@ -72,4 +72,6 @@ body{
   color:white !important;
   height:auto;
   }
- 
+ .App-intro{
+     font-size: 50;
+ }

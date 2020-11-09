@@ -1,6 +1,7 @@
 import React from 'react'
 import CustomizedCard from './Card'
 import Carousel from 'react-bootstrap/Carousel'
+import { Link } from 'react-router-dom'
 function List() {
 
     const cardsStyling = {
@@ -62,6 +63,13 @@ function List() {
                         title="Time"
                         href="/time"
                         linkName="View" />
+                </Carousel.Item>
+                <Carousel.Item>
+                    <CustomizedCard
+                        title="Statepractice"
+                        href="/statePractice"
+                        linkName="View"
+                    />
                 </Carousel.Item>
 
 

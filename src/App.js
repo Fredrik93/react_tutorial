@@ -11,6 +11,7 @@ import Home from './Components/Home'
 import Products from './Components/Products'
 import Cars from './Components/Cars'
 import Projects from './Components/Projects'
+import StatePractice from "./Components/StatePractice";
 
 class App extends React.Component {
     constructor(props) {
@@ -50,6 +51,7 @@ class App extends React.Component {
                                         <Route path="/checkboxes" component={Checkbox} />
                                         <Route path="/about" component={About} />
                                         <Route path="/time" component={Time} />
+                                        <Route path="/statePractice" component={StatePractice} />
                                     </div>
                                 </div>
                             </>
