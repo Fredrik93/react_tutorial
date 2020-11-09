@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-class StatePractice extends React.Component {
+class StatePractice extends Component {
     constructor() {
         super()
         this.state = {
-            answer: "yes"
+            answer: "yes",
+            age: 27,
+            name: "Fredfred"
         }
     }
 
@@ -12,19 +14,16 @@ class StatePractice extends React.Component {
         const styling = {
             marginTop: "10vh",
             textAlign: "center",
-            border: "1px solid gray",
             display: 'block-flex',
             alignItems: 'center',
-            justifyContent: 'center',
-
-
-
-
-
+            justifyContent: 'center'
         }
         return (
             <div style={styling} >
-                <p style={{ borderBottom: "1px solid gray" }} >  Are states really important to understand?</p>
+                <h1>My name is {this.state.name}</h1>
+                <h3>I'm {this.state.age} Years old</h3>
+                <br></br>
+                <p style={{ borderTop: "1px solid gray" }} >  Are states really important to understand?</p>
                 <h1> Answer from state: {this.state.answer} !!! </h1>
             </div >
         )

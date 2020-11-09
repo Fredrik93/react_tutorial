@@ -12,6 +12,7 @@ import Products from './Components/Products'
 import Cars from './Components/Cars'
 import Projects from './Components/Projects'
 import StatePractice from "./Components/StatePractice";
+import LoggedIn from "./Components/LoggedIn";
 
 class App extends React.Component {
     constructor(props) {
@@ -52,6 +53,7 @@ class App extends React.Component {
                                         <Route path="/about" component={About} />
                                         <Route path="/time" component={Time} />
                                         <Route path="/statePractice" component={StatePractice} />
+                                        <Route path="/loggedIn" component={LoggedIn} />
                                     </div>
                                 </div>
                             </>
@@ -86,7 +88,7 @@ class Greeting extends React.Component {
         }
         return (
             <div>
-                { timeOfDay}
+                {timeOfDay}
             </div>)
 
     }
