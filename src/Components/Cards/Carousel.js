@@ -82,6 +82,14 @@ function ProjectsCarousel() {
                             linkName="View"
                         />
                     </Carousel.Item>
+                    <Carousel.Item>
+                        <CustomizedCard
+                            title="Counter"
+                            href="/counter"
+                            subtitle="Using states to update counter"
+                            linkName="View"
+                        />
+                    </Carousel.Item>
 
                 </Carousel>
             </div>
