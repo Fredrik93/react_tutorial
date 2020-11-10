@@ -3,26 +3,13 @@ import Nav from './Components/Nav'
 import Routing from './Routing'
 
 class App extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = { myAPIResponse: "" }
-    }
-    callAPI() {
-        fetch('http://localhost:3001/testAPI')
-            .then(res => res.text())
-            .then(res => this.setState({ myAPIResponse: res }))
-    }
 
-    componentDidMount() {
-        this.callAPI()
-    }
 
     render() {
         return (
             <Fragment>
                 <Nav />
                 <Routing />
-                <p className="App-intro"> {this.state.myAPIResponse} </p>
             </Fragment>
         )
     }

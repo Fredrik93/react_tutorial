@@ -8,12 +8,13 @@ class Counter extends React.Component {
             number: 0
         }
     }
+    handleCounter() {
+        //  state.number = state.number + 1;
+        //   console.log(`Number is ${state.number}`)
+    }
     render() {
 
-        function count() {
-            this.state.number = this.state.number + 1;
-            console.log(`Number is ${this.state.number}`)
-        }
+
         const stylingNumber = {
             display: 'flex',
             alignItems: 'center',
@@ -38,10 +39,7 @@ class Counter extends React.Component {
                 </div>
 
                 <div style={stylingButton}>
-                    <button className="btn-lg btn-success" onClick={() => {
-                        this.state.number = this.state.number + 1;
-                        console.log(`Number is ${this.state.number}`)
-                    }} >Change!</button>
+                    <button className="btn-lg btn-success" onClick={this.handleCounter} >Change!</button>
                 </div>
             </Fragment>
         )

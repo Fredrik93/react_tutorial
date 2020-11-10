@@ -13,6 +13,7 @@ import Projects from './Components/Cards/Projects'
 import StatePractice from "./Components/StatePractice";
 import LoggedIn from "./Components/LoggedIn";
 import Counter from "./Components/Counter";
+import ApiData from "./Components/ApiData";
 
 function Routing() {
     return (
@@ -36,6 +37,7 @@ function Routing() {
                                 <Route path="/statePractice" component={StatePractice} />
                                 <Route path="/loggedIn" component={LoggedIn} />
                                 <Route path="/counter" component={Counter} />
+                                <Route path="/apis" component={ApiData} />
                             </div>
                         </div>
                     </>
