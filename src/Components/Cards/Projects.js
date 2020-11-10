@@ -12,7 +12,7 @@ function List() {
         <Container  >
             <Row>
                 <Card style={{ width: '18rem', marginTop: "10vh", marginLeft: "9vh" }}>
-                    <a href="https://ullmanitconsulting.se/">
+                    <a href="https://agnart.se/" target="_blank">
                         <Card.Img variant="top" src={agnartScreenShot} />
                     </a>
                     <Card.Body>
@@ -20,14 +20,14 @@ function List() {
                         <Card.Text>
                             A website project with a client
                     </Card.Text>
-                        <form action="https://agnart.se/">
+                        <form action="https://agnart.se/" >
                             <Button type="submit" variant="primary">Check it Out</Button>
                         </form>
                     </Card.Body>
 
                 </Card>
                 <Card style={{ width: '18rem', marginTop: "10vh", marginLeft: "5vh" }}>
-                    <a href="https://jomiola.se//" >
+                    <a href="https://jomiola.se/" target="_blank">
                         <Card.Img variant="top" src={jomiolaScreenShot} />
                     </a>
                     <Card.Body>
@@ -43,7 +43,7 @@ function List() {
 
                 </Card>
                 <Card style={{ width: '18rem', marginTop: "10vh", marginLeft: "5vh" }}>
-                    <a href="https://ullmanitconsulting.se/" >
+                    <a target="_blank" href="https://ullmanitconsulting.se/" >
                         <Card.Img variant="top" src={uicScreenshot} />
                     </a>
                     <Card.Body>
