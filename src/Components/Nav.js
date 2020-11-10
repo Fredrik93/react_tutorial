@@ -26,6 +26,8 @@ function navigation() {
                         <NavDropdown.Item href="/time">Time</NavDropdown.Item>
                         <NavDropdown.Item href="/statePractice">States</NavDropdown.Item>
                         <NavDropdown.Item href="/loggedIn">Logged In</NavDropdown.Item>
+                        <NavDropdown.Item href="/apis">API calls</NavDropdown.Item>
+
                     </NavDropdown>
                 </Nav>
                 <Form inline>

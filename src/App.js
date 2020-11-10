@@ -1,45 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Nav from './Components/Nav'
 import Routing from './Routing'
 
-class App extends React.Component {
-
-
-    render() {
-        return (
-            <Fragment>
-                <Nav />
-                <Routing />
-            </Fragment>
-        )
-    }
+function App() {
+    return (
+        <div>
+            <Nav />
+            <Routing />
+        </div>
+    )
 }
-
-class Header extends React.Component {
-    render() {
-        return (
-            <header>
-                <p> Welcome, {this.props.username}! </p>
-            </header>)
-    }
-}
-
-class Greeting extends React.Component {
-    render() {
-        const date = new Date()
-        const hours = date.getHours()
-        let timeOfDay = hours
-        if (hours < 12) {
-            timeOfDay = `morning! its ${timeOfDay} o'clock`
-        } else {
-            timeOfDay = `evening! its ${timeOfDay} o'clock`
-        }
-        return (
-            <div>
-                {timeOfDay}
-            </div>)
-
-    }
-}
-
 export default App

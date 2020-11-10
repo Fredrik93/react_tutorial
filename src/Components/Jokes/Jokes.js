@@ -22,7 +22,7 @@ function Jokes() {
 
 
     return (
-        <div> {jokesComponent} </div>
+        <div style={{ textAlign: "center", marginTop: "10vh" }} > {jokesComponent} </div>
     )
 }
 
