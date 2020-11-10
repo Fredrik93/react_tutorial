@@ -79,6 +79,10 @@ input[type=checkbox]:focus{
     align-items : center;
     justify-content: center;
     margin-top: 10vh;
-    text-align: center;
     
+ }
+
+ .centerText{
+     text-align: center;
+     margin-top: 10vh;
  }

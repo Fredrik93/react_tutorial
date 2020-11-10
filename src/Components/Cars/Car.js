@@ -1,15 +1,24 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 function Car(props) {
     console.log(props.make)
     const styling = {
         borderBottom: "1px solid grey",
-        width: "40vh"
-    }
-    return (<div style={styling} >
+        textAlign: "center",
+        marginTop: "10vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        marginTop: "10vh"
 
-        <h3>Make: {props.make}</h3>
-        <h3>Year: {props.year}</h3>
-    </div>)
+    }
+    return (
+        <Container>
+            <div style={styling} >
+
+                <h3> Make: {props.make} <br /> Year: {props.year} </h3>
+
+            </div></Container>)
 }
 export default Car
