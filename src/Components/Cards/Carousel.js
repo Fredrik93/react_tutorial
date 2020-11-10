@@ -32,7 +32,7 @@ function ProjectsCarousel() {
                         <CustomizedCard
                             title="Jokes"
                             href="/jokes"
-                            sampleText="lil project"
+                            sampleText="Load data from another file"
                             linkName="View" />
 
                     </Carousel.Item>
