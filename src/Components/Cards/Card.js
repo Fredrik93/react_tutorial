@@ -20,13 +20,15 @@ function CustomizedCard(props) {
     const cardStyle = {
 
         border: "2px solid #e7e7e7",
-        borderRadius: "4px",
+        borderRadius: "2vh",
         padding: ".5rem",
-        backgroundColor: "darkGray"
-
+        backgroundColor: "lightGray",
+        justifyContent: "center",
+        display: "flex",
+        textAlign: "center"
     }
 
-    return (<div className="cardStyle text-center" >
+    return (<div >
         <Card style={cardStyle} >
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>

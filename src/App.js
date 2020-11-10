@@ -35,9 +35,7 @@ class App extends React.Component {
 
                 <Router>
                     <div >
-
                         <Nav />
-
                         <Switch >
                             <>
                                 <div  >
