@@ -4,7 +4,15 @@ import Carousel from 'react-bootstrap/Carousel'
 import { Container } from 'react-bootstrap'
 function ProjectsCarousel() {
     const cardsStyling = {
-        margin: "4vh"
+        margin: "4vh",
+        border: "2px solid #e7e7e7",
+        borderRadius: "2vh",
+        padding: ".5rem",
+        background: "linear-gradient(0deg, rgba(0,237,240,1) 0%, rgba(11,0,232,1) 59%)",
+        justifyContent: "center",
+        color: "white",
+        display: "flex",
+        textAlign: "center",
     }
     return (
         <Container>

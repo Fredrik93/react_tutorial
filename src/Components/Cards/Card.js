@@ -33,8 +33,8 @@ function CustomizedCard(props) {
     return (<div >
         <Card style={cardStyle} >
             <Card.Body>
-                <Card.Title style={{ fontSize: "6vh" }}>{props.title}</Card.Title>
-                <Card.Subtitle style={{ fontSize: "3vh" }}>{props.subtitle}</Card.Subtitle>
+                <Card.Title style={{ fontSize: "5vh" }}>{props.title}</Card.Title>
+                <Card.Subtitle style={{ fontSize: "2vh" }}>{props.subtitle}</Card.Subtitle>
                 <Card.Text> {props.sampleText}</Card.Text>
                 <Card.Link style={stylingBtn} href={props.href}>{props.linkName} </Card.Link>
             </Card.Body>
