@@ -22,18 +22,19 @@ function CustomizedCard(props) {
         border: "2px solid #e7e7e7",
         borderRadius: "2vh",
         padding: ".5rem",
-        backgroundColor: "black",
+        background: "linear-gradient(0deg, rgba(0,237,240,1) 0%, rgba(11,0,232,1) 59%)",
         justifyContent: "center",
         color: "white",
         display: "flex",
-        textAlign: "center"
+        textAlign: "center",
+
     }
 
     return (<div >
         <Card style={cardStyle} >
             <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Subtitle>{props.subtitle}</Card.Subtitle>
+                <Card.Title style={{ fontSize: "6vh" }}>{props.title}</Card.Title>
+                <Card.Subtitle style={{ fontSize: "3vh" }}>{props.subtitle}</Card.Subtitle>
                 <Card.Text> {props.sampleText}</Card.Text>
                 <Card.Link style={stylingBtn} href={props.href}>{props.linkName} </Card.Link>
             </Card.Body>

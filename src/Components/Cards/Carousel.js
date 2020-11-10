@@ -24,7 +24,7 @@ function ProjectsCarousel() {
                         <CustomizedCard
                             title="Products"
                             href="/products"
-                            sampleText="lil project"
+                            subtitle="lil project"
                             linkName="View" />
                     </Carousel.Item>
 
@@ -32,7 +32,7 @@ function ProjectsCarousel() {
                         <CustomizedCard
                             title="Jokes"
                             href="/jokes"
-                            sampleText="Load data from another file"
+                            subtitle="Load data from another file"
                             linkName="View" />
 
                     </Carousel.Item>
@@ -40,14 +40,14 @@ function ProjectsCarousel() {
                         <CustomizedCard
                             title="Contacts"
                             href="/contacts"
-                            sampleText="lil project"
+                            subtitle="lil project"
                             linkName="View" />
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomizedCard
                             title="Todos"
                             href="/todos"
-                            sampleText="lil project"
+                            subtitle="lil project"
                             linkName="View" />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -55,14 +55,14 @@ function ProjectsCarousel() {
                         <CustomizedCard
                             title="Time"
                             href="/time"
-                            sampleText="lil project"
+                            subtitle="lil project"
                             linkName="View" />
                     </Carousel.Item>
                     <Carousel.Item>
                         <CustomizedCard
                             title="Statepractice"
                             href="/statePractice"
-                            sampleText="lil project"
+                            subtitle="lil project"
                             linkName="View"
                         />
                     </Carousel.Item>
@@ -70,7 +70,7 @@ function ProjectsCarousel() {
                         <CustomizedCard
                             title="Logged In"
                             href="/loggedIn"
-                            sampleText="Conditional logic practice"
+                            subtitle="Conditional logic practice"
                             linkName="View"
                         />
                     </Carousel.Item>
