@@ -22,8 +22,9 @@ function CustomizedCard(props) {
         border: "2px solid #e7e7e7",
         borderRadius: "2vh",
         padding: ".5rem",
-        backgroundColor: "lightGray",
+        backgroundColor: "black",
         justifyContent: "center",
+        color: "white",
         display: "flex",
         textAlign: "center"
     }
