@@ -13,6 +13,7 @@ import Cars from './Components/Cars/Cars'
 import Projects from './Components/Cards/Projects'
 import StatePractice from "./Components/StatePractice";
 import LoggedIn from "./Components/LoggedIn";
+import Counter from "./Components/Counter";
 
 class App extends React.Component {
     constructor(props) {
@@ -52,6 +53,7 @@ class App extends React.Component {
                                         <Route path="/time" component={Time} />
                                         <Route path="/statePractice" component={StatePractice} />
                                         <Route path="/loggedIn" component={LoggedIn} />
+                                        <Route path="/counter" component={Counter} />
                                     </div>
                                 </div>
                             </>

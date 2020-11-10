@@ -1,3 +1,6 @@
+body {
+    background-color:whitesmoke !important ;
+  }
 .App{
     text-align: center;
 }
@@ -58,11 +61,6 @@ input[type=checkbox]:focus{
     padding: 30px;
     margin-top: 5vh;
 }
-
-body{
- background-color: whitesmoke;
-}
-
 .jumbotron{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, 
