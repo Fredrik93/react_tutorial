@@ -22,13 +22,14 @@ function CustomizedCard(props) {
         border: "2px solid #e7e7e7",
         borderRadius: "2vh",
         padding: ".5rem",
+        backgroundColor: "black",
         justifyContent: "center",
         color: "white",
         display: "flex",
         textAlign: "center"
     }
 
-    return (<div className="ProjectCards" >
+    return (<div >
         <Card style={cardStyle} >
             <Card.Body>
                 <Card.Title>{props.title}</Card.Title>
