@@ -1,6 +1,8 @@
 import React from 'react'
 import '../App.css'
+import logo from '../Assets/UIC-logo.png'
 import { Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-bootstrap'
+
 function navigation() {
     const NavStyling = {
         marginLeft: "10vh"
@@ -8,7 +10,7 @@ function navigation() {
 
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="/">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="/"> <img style={{ width: "24vh" }} src={logo}></img> </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav style={NavStyling} className="mr-auto">
