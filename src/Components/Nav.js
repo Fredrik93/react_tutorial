@@ -13,14 +13,19 @@ function navigation() {
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav style={NavStyling} className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
-                    <Nav.Link href="/projects">Projects</Nav.Link>
+
                     <Nav.Link href="/about">About</Nav.Link>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
+                        <NavDropdown.Item href="/projects">All Projects</NavDropdown.Item>
                         <NavDropdown.Item href="/cars">Cars</NavDropdown.Item>
-                        <NavDropdown.Item href="/time">Time</NavDropdown.Item>
+                        <NavDropdown.Item href="/products">Products</NavDropdown.Item>
+                        <NavDropdown.Item href="/contacts">Contacts</NavDropdown.Item>
+                        <NavDropdown.Item href="/todos">Todos</NavDropdown.Item>
                         <NavDropdown.Item href="/jokes">Jokes</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+                        <NavDropdown.Item href="/checkboxes">Checkboxes</NavDropdown.Item>
+                        <NavDropdown.Item href="/time">Time</NavDropdown.Item>
+                        <NavDropdown.Item href="/statePractice">States</NavDropdown.Item>
+                        <NavDropdown.Item href="/loggedIn">Logged In</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Form inline>
