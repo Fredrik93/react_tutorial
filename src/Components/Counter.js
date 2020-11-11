@@ -7,11 +7,18 @@ class Counter extends React.Component {
         this.state = {
             number: 0
         }
+        this.handleCounter = this.handleCounter.bind(this)
     }
     handleCounter() {
-        //  state.number = state.number + 1;
-        //   console.log(`Number is ${state.number}`)
+        this.setState(previousState => {
+            return {
+                number: previousState.number + 1
+            }
+        })
+        console.log()
     }
+
+
     render() {
 
 
@@ -39,6 +46,7 @@ class Counter extends React.Component {
                 </div>
 
                 <div style={stylingButton}>
+                    {/* when the method is part of the class we need the 'this.' */}
                     <button className="btn-lg btn-success" onClick={this.handleCounter} >Change!</button>
                 </div>
             </Fragment>
