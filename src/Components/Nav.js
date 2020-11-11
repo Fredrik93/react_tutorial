@@ -5,7 +5,8 @@ import { Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-boots
 
 function navigation() {
     const NavStyling = {
-        marginLeft: "10vh"
+        marginLeft: "10vh",
+
     }
 
     return (

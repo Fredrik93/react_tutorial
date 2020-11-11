@@ -68,10 +68,12 @@ input[type=checkbox]:focus{
     rgba(39,39,143,1) 38%, 
     rgba(0,212,255,1) 83%);
   color:white ;
+  border-radius: 5vh!important;
   height:auto;
   margin-top: 10vh;
   align-items: center;
   text-align: center;
+
   }
  .App-intro{
      font-size: 50;

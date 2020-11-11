@@ -6,7 +6,7 @@ import '../App.css'
 function Home() {
 
     return (<div>
-        <Container style={{ backgroundColor: "black" }}>
+        <Container >
 
             <Jumbotron>
                 <h1>Welcome!</h1>
@@ -15,9 +15,7 @@ function Home() {
     </p>
                 <ViewProjectButton />
             </Jumbotron>
-            <Jumbotron />
-            <Jumbotron />
-            <Jumbotron />
+
 
         </Container>
 
