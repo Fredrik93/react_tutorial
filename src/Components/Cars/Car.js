@@ -6,7 +6,6 @@ function Car(props) {
     const styling = {
         borderBottom: "1px solid grey",
         textAlign: "center",
-        marginTop: "10vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

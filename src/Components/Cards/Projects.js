@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Projects from './Carousel'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Card, Button, Container, Row } from 'react-bootstrap';
@@ -12,7 +12,7 @@ function List() {
         <Container  >
             <Row>
                 <Card style={{ width: '18rem', marginTop: "10vh", marginLeft: "9vh" }}>
-                    <a href="https://agnart.se/" target="_blank">
+                    <a href="https://agnart.se/" target="_blank" rel="noopener noreferrer" >
                         <Card.Img variant="top" src={agnartScreenShot} />
                     </a>
                     <Card.Body>
@@ -27,7 +27,7 @@ function List() {
 
                 </Card>
                 <Card style={{ width: '18rem', marginTop: "10vh", marginLeft: "5vh" }}>
-                    <a href="https://jomiola.se/" target="_blank">
+                    <a href="https://jomiola.se/" target="_blank" rel="noopener noreferrer">
                         <Card.Img variant="top" src={jomiolaScreenShot} />
                     </a>
                     <Card.Body>
@@ -43,7 +43,7 @@ function List() {
 
                 </Card>
                 <Card style={{ width: '18rem', marginTop: "10vh", marginLeft: "5vh" }}>
-                    <a target="_blank" href="https://ullmanitconsulting.se/" >
+                    <a target="_blank" href="https://ullmanitconsulting.se/" rel="noopener noreferrer" >
                         <Card.Img variant="top" src={uicScreenshot} />
                     </a>
                     <Card.Body>

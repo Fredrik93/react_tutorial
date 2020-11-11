@@ -11,7 +11,7 @@ function navigation() {
 
     return (
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="/"> <img style={{ width: "24vh" }} src={logo}></img> </Navbar.Brand>
+            <Navbar.Brand href="/"> <img alt="uic-logo" style={{ width: "24vh" }} src={logo}></img> </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav style={NavStyling} className="mr-auto">
@@ -30,6 +30,8 @@ function navigation() {
                         <NavDropdown.Item href="/statePractice">States</NavDropdown.Item>
                         <NavDropdown.Item href="/loggedIn">Logged In</NavDropdown.Item>
                         <NavDropdown.Item href="/apis">API calls</NavDropdown.Item>
+                        <NavDropdown.Item href="/counter">Counter</NavDropdown.Item>
+
 
                     </NavDropdown>
                 </Nav>
