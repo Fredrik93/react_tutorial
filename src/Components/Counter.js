@@ -1,21 +1,22 @@
 import React, { Fragment } from 'react'
-
 class Counter extends React.Component {
     constructor() {
         super()
         this.state = {
-            number: 0
+            number: 0,
+            hiddenNumber: 0
         }
         this.handleCounter = this.handleCounter.bind(this)
         this.decrementSum = this.decrementSum.bind(this)
     }
     handleCounter() {
+
         this.setState(previousState => {
             return {
                 number: previousState.number + 1
+
             }
         })
-        console.log()
     }
     decrementSum() {
 
@@ -28,8 +29,6 @@ class Counter extends React.Component {
 
         })
     }
-
-
     render() {
         const stylingNumber = {
             display: 'flex',
@@ -37,18 +36,13 @@ class Counter extends React.Component {
             justifyContent: 'center',
             marginTop: "15vh",
             fontSize: "20vh",
-
-
         }
         const stylingButton = {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             marginTop: "3vh",
-
         }
-
-
         return (
             <Fragment>
                 <div style={stylingNumber} >
@@ -65,7 +59,6 @@ class Counter extends React.Component {
                         </div>
                     </span>
                 </div>
-
             </Fragment>
         )
     }

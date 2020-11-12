@@ -6,9 +6,9 @@ function Todos(props) {
         <p >
             <input type="checkbox"
                 checked={props.chore.completed}
-                onChange={() => { console.log("Changed!") }}
+                onChange={() => props.handleChange(props.chore.id)}
             /> {props.chore.text}
         </p>
     </div>)
 }
-export default Todos    
+export default Todos     

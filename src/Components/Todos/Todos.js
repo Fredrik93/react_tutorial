@@ -8,15 +8,20 @@ class Todos extends React.Component {
         this.state = {
             todos: todosData
         }
+        this.handleChange = this.handleChange.bind(this)
+    }
+    handleChange(id) {
+        console.log("clicked", id)
     }
     render() {
 
         const todosComponent = this.state.todos.map(item =>
             //chore is the prop that were passing down to todoItem.js
-            <TodoItems key={item.id} chore={item} />)
+            <TodoItems key={item.id} chore={item} handleChange={this.handleChange} />)
 
         return (<div className="todo-list" >
             { todosComponent}
+
         </div>)
     }
 }
