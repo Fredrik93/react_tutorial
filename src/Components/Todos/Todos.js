@@ -14,7 +14,17 @@ class Todos extends React.Component {
 
 
     handleChange(id) {
-        console.log("checked", id)
+        this.setState(prevState => {
+            const updatedTodos = prevState.todos.map(todo => {
+                if (todo.id === id) {
+                    todo.completed = !todo.completed
+                }
+                return todo
+            })
+            return {
+                todos: updatedTodos
+            }
+        })
     }
 
     render() {
