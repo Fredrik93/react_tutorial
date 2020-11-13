@@ -9,20 +9,18 @@ class Todos extends React.Component {
         this.state = {
             todos: todosData
         }
-        this.handleCheckbox = this.handleCheckbox.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
 
 
-    handleCheckbox(id) {
+    handleChange(id) {
         console.log("checked", id)
     }
 
     render() {
-        const todosComponent = todosData.map(function (choreItem) {
-            return <TodoItem chore={choreItem.chore} completed={choreItem.completed} key={choreItem.id} />
-        })
+        const todoItems = todosData.map(choreItem => <TodoItem key={choreItem.id} choreItem={choreItem} handleChange={this.handleChange} />)
 
-        return (<div className="todo-list"> { todosComponent} </div>)
+        return (<div className="todo-list"> { todoItems} </div>)
     }
 }
 export default Todos
