@@ -1,38 +1,14 @@
 import React from 'react'
-import TodoItems from './TodoItem'
+import TodoItem from './TodoItem'
 import todosData from './todosData'
 
-class Todos extends React.Component {
-    constructor() {
-        super()
-        this.state = {
-            todos: todosData
-        }
-        this.handleChange = this.handleChange.bind(this)
-    }
-    handleChange(id) {
-        this.setState(prevState => {
-            const updatedTodos = prevState.todos.map(todo => {
-                if (todo.id === id) {
-                    todo.completed = !todo.completed
-                }
-                return todo
-            })
-            return {
-                todos: updatedTodos
-            }
-        })
-    }
-    render() {
 
-        const todosComponent = this.state.todos.map(item =>
-            //chore is the prop that were passing down to todoItem.js
-            <TodoItems key={item.id} chore={item} handleChange={this.handleChange} />)
+function Todos() {
 
-        return (<div className="todo-list" >
-            { todosComponent}
+    const todosComponent = todosData.map(function (choreItem) {
+        return <TodoItem chore={choreItem.chore} completedItem={choreItem.completed} key={choreItem.id} />
+    })
 
-        </div>)
-    }
+    return (<div className="todo-list"> { todosComponent} </div>)
 }
 export default Todos
