@@ -15,7 +15,25 @@ class Conditional extends React.Component {
                 isLoading: false
             })
         }, 1500)
+        setTimeout(() => {
+            this.setState({
+                isLoading: true
+            })
+        }, 2500)
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            })
+        }, 4000)
+        setTimeout(() => {
+            this.setState({
+                isLoading: false
+            })
+        }, 4500)
+
+
     }
+
 
 
     render() {
