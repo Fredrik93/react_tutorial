@@ -31,6 +31,7 @@ function navigation() {
                         <NavDropdown.Item href="/loggedIn">Logged In</NavDropdown.Item>
                         <NavDropdown.Item href="/apis">API calls</NavDropdown.Item>
                         <NavDropdown.Item href="/counter">Counter</NavDropdown.Item>
+                        <NavDropdown.Item href="/conditional">Conditional rendering </NavDropdown.Item>
 
 
                     </NavDropdown>

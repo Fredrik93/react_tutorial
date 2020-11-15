@@ -14,6 +14,7 @@ import StatePractice from "./Components/StatePractice";
 import LoggedIn from "./Components/LoggedIn";
 import Counter from "./Components/Counter";
 import ApiData from "./Components/ApiData";
+import Conditional from "./Components/ConditionalRendering/Conditional";
 
 function Routing() {
     return (
@@ -38,6 +39,7 @@ function Routing() {
                                 <Route path="/loggedIn" component={LoggedIn} />
                                 <Route path="/counter" component={Counter} />
                                 <Route path="/apis" component={ApiData} />
+                                <Route path="/conditional" component={Conditional} />
                             </div>
                         </div>
                     </>
