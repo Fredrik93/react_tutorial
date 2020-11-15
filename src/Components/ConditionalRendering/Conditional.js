@@ -18,8 +18,14 @@ class Conditional extends React.Component {
     }
 
 
-    render() { return (<ConditionalItem isLoading={this.state.isLoading} />) }
+    render() {
+        return (
+            <div>
+                {this.state.isLoading === true ? <h3>Loading...</h3> : <ConditionalItem />}
 
+
+            </div>)
+    }
 }
 
 
