@@ -90,6 +90,14 @@ function ProjectsCarousel() {
                             linkName="View"
                         />
                     </Carousel.Item>
+                    <Carousel.Item>
+                        <CustomizedCard
+                            title="Conditional rendering"
+                            href="/conditional"
+                            subtitle="condition statements"
+                            linkName="View"
+                        />
+                    </Carousel.Item>
 
                 </Carousel>
             </div>
