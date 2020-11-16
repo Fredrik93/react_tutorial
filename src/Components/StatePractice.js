@@ -27,6 +27,8 @@ class StatePractice extends Component {
                 <p style={{ borderTop: "1px solid gray" }} >  Are states really important to understand?</p>
                 <h1> Answer from state: {this.state.answer} !!! </h1>
                 { this.state.unreadMessages.length > 0 ? <h3> You have {this.state.unreadMessages.length} messages available</h3> : null}
+                { this.state.unreadMessages.length > 0 && <h3> You have {this.state.unreadMessages.length} messages available</h3>}
+
             </div >
         )
     }
