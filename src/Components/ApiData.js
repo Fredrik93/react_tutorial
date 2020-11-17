@@ -4,7 +4,11 @@ import { Container } from 'react-bootstrap'
 class ApiData extends React.Component {
     constructor() {
         super()
-        this.state = { myApiResponse: "" }
+        this.state = {
+            myApiResponse: "",
+            character: {}
+        }
+
     }
     testCallApi() {
         fetch('http://localhost:3001/testAPI')
@@ -15,7 +19,7 @@ class ApiData extends React.Component {
     callStartWarsApi() {
         fetch('https://swapi.dev/api/people/1')
             .then(response => response.json())
-            .then(data => console.log(data))
+            .then(res => this.setState({ character: res }))
     }
     componentDidMount() {
         this.callStartWarsApi()
@@ -26,6 +30,8 @@ class ApiData extends React.Component {
         return (
             <Container>
                 <p className="centerItem" style={{ border: "1px solid gray" }} > {this.state.myApiResponse} </p>
+                <p className="centerItem" style={{ border: "1px solid gray" }} > {this.state.character.name} </p>
+
             </Container>
         )
     }
