@@ -11,7 +11,14 @@ class ApiData extends React.Component {
             .then(res => res.text())
             .then(res => this.setState({ myApiResponse: res }))
     }
+
+    callStartWarsApi() {
+        fetch('https://swapi.dev/api/people/1')
+            .then(response => response.json())
+            .then(data => console.log(data))
+    }
     componentDidMount() {
+        this.callStartWarsApi()
         this.testCallApi()
     }
 

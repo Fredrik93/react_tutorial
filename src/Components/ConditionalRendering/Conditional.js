@@ -42,7 +42,9 @@ class Conditional extends React.Component {
             })
         }, 3500)
     }
+
     render() {
+
         let buttonText = this.state.isLoggedIn ? <p>Log out</p> : <p>Log in</p>
         let displayText = this.state.isLoggedIn ? <h3>Logged In</h3> : <h3>Logged Out </h3>
         return (
