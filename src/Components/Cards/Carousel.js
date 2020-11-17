@@ -98,6 +98,14 @@ function ProjectsCarousel() {
                             linkName="View"
                         />
                     </Carousel.Item>
+                    <Carousel.Item>
+                        <CustomizedCard
+                            title="Forms"
+                            href="/form"
+                            subtitle="Creating forms"
+                            linkName="View"
+                        />
+                    </Carousel.Item>
 
                 </Carousel>
             </div>

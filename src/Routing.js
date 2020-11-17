@@ -15,6 +15,7 @@ import LoggedIn from "./Components/LoggedIn";
 import Counter from "./Components/Counter";
 import ApiData from "./Components/ApiData";
 import Conditional from "./Components/ConditionalRendering/Conditional";
+import Forms from "./Components/Forms";
 
 function Routing() {
     return (
@@ -40,6 +41,7 @@ function Routing() {
                                 <Route path="/counter" component={Counter} />
                                 <Route path="/apis" component={ApiData} />
                                 <Route path="/conditional" component={Conditional} />
+                                <Route path="/form" component={Forms} />
                             </div>
                         </div>
                     </>
