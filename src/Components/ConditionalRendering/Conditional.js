@@ -10,6 +10,11 @@ class Conditional extends React.Component {
             isLoggedIn: true
         }
     }
+
+    handleClick() {
+
+        console.log("Clicked")
+    }
     componentDidMount() {
         setTimeout(() => {
             this.setState({
@@ -20,25 +25,25 @@ class Conditional extends React.Component {
             this.setState({
                 isLoading: true
             })
-        }, 2500)
+        }, 2000)
         setTimeout(() => {
             this.setState({
                 isLoading: false
             })
-        }, 4000)
+        }, 3000)
         setTimeout(() => {
             this.setState({
                 isLoading: false
             })
-        }, 4500)
+        }, 3500)
     }
     render() {
         return (
             <div style={{ textAlign: "center", marginTop: "10vh" }}>
-                { this.state.isLoading === true ? <h3>Loading...</h3> : <ConditionalItem />}
+                { this.state.isLoading === true ? <h3> Loading...</h3> : <ConditionalItem />}
                 <div style={{ textAlign: "center", marginTop: "20vh" }}>
-                    <h3> {this.state.isLoggedIn ? <h3>Logged In</h3> : <h3>Logged Out </h3>}</h3>
-                    <button style={{ height: "4vh" }} className="btn btn-info" >{this.state.isLoggedIn ? <p>Log out</p> : <p>Log in</p>}</button>
+                    {this.state.isLoggedIn ? <h3>Logged In</h3> : <h3>Logged Out </h3>}
+                    <button onClick={this.handleClick} style={{ height: "35px" }} className="btn btn-info" >{this.state.isLoggedIn ? <p>Log out</p> : <p>Log in</p>}</button>
                 </div>
             </div >)
     }
