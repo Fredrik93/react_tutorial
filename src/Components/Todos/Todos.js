@@ -7,7 +7,8 @@ class Todos extends React.Component {
     constructor() {
         super()
         this.state = {
-            todos: todosData
+            todos: todosData,
+            completed: ''
         }
         this.handleChange = this.handleChange.bind(this)
     }

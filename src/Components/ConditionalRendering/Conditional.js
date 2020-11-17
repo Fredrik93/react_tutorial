@@ -46,12 +46,19 @@ class Conditional extends React.Component {
         let buttonText = this.state.isLoggedIn ? <p>Log out</p> : <p>Log in</p>
         let displayText = this.state.isLoggedIn ? <h3>Logged In</h3> : <h3>Logged Out </h3>
         return (
+
             <div style={{ textAlign: "center", marginTop: "10vh" }}>
-                { this.state.isLoading === true ? <h3> Loading...</h3> : <ConditionalItem />}
+                {this.state.isLoading === true
+                    ?
+                    <h3> Loading...</h3>
+                    :
+                    <ConditionalItem />}
+
                 <div style={{ textAlign: "center", marginTop: "20vh" }}>
                     {displayText}
                     <button onClick={this.handleClick}
-                        style={{ height: "35px" }} className="btn btn-info" >{buttonText}</button>
+                        style={{ height: "35px" }} className="btn btn-info" >
+                        {buttonText}</button>
                 </div>
             </div >
         )
