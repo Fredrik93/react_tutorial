@@ -5,7 +5,8 @@ class Forms extends React.Component {
         super()
         this.state = {
             counter: 0,
-            value: ''
+            value: '',
+            firstName: ""
         }
         this.handleCounter = this.handleCounter.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -20,8 +21,13 @@ class Forms extends React.Component {
         })
     }
     handleSubmit(event) {
-        alert("A name was submitted" + this.state.value)
+        console.log("A name was submitted :" + this.state.value)
         event.preventDefault()
+    }
+    handleInputChange() {
+        this.setState({
+            firstName: "???"
+        })
     }
     render() {
         const styling = {
@@ -40,6 +46,9 @@ class Forms extends React.Component {
                         <input type="text" value={this.state.value} onChange={this.handleChange} />
                     </label>
                     <input type="submit" value="Submit" />
+                </form>
+                <form>
+                    <input type="text" placeholder="First Name" onChange={this.handleInputChange} />
                 </form>
             </div>)
     }
