@@ -11,6 +11,7 @@ class Forms extends React.Component {
         this.handleCounter = this.handleCounter.bind(this)
         this.handleChange = this.handleChange.bind(this)
         this.handleSubmit = this.handleSubmit.bind(this)
+        this.handleInputChange = this.handleInputChange.bind(this)
     }
     handleChange(event) {
         this.setState({ value: event.target.value })
@@ -24,9 +25,10 @@ class Forms extends React.Component {
         console.log("A name was submitted :" + this.state.value)
         event.preventDefault()
     }
-    handleInputChange() {
+    handleInputChange(event) {
+
         this.setState({
-            firstName: "???"
+            firstName: event.target.value
         })
     }
     render() {
@@ -50,6 +52,7 @@ class Forms extends React.Component {
                 <form>
                     <input type="text" placeholder="First Name" onChange={this.handleInputChange} />
                 </form>
+                <h1> {this.state.firstName}</h1>
             </div>)
     }
 }
