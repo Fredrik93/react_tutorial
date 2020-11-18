@@ -39,10 +39,6 @@ class Forms extends React.Component {
         }
         return (
             <div style={styling}>
-                <div >
-                    <h3> {this.state.counter} </h3>
-                    <button onClick={this.handleCounter} >Click </button>
-                </div>
                 <form onSubmit={this.handleSubmit} >
                     <label>
                         Name:
@@ -50,10 +46,20 @@ class Forms extends React.Component {
                     </label>
                     <input type="submit" value="Submit" />
                 </form>
+                <br></br>
                 <form>
-                    <input type="text" name="firstName" placeholder="First Name" onChange={this.handleInputChange} />
+                    <input type="text"
+                        value={this.state.firstName}
+                        name="firstName"
+                        placeholder="First Name"
+                        onChange={this.handleInputChange}
+                    />
                     <br></br>
-                    <input type="text" name="lastName" placeholder="Last Name" onChange={this.handleInputChange} />
+                    <input type="text"
+                        value={this.state.lastName}
+                        name="lastName"
+                        placeholder="Last Name"
+                        onChange={this.handleInputChange} />
                 </form>
                 <h1> {this.state.firstName} {this.state.lastName}</h1>
             </div>)
