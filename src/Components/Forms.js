@@ -32,6 +32,13 @@ class Forms extends React.Component {
             [event.target.name]: event.target.value
         })
     }
+    //this is used to prevent some type of bug in the future for setting state.
+    // handleInputChange(event) {
+    //     const {name, value} = event.target
+    //     this.setState({
+    //         [name]: value
+    //     })
+    // }
     render() {
         const styling = {
             paddingTop: "20vh",
