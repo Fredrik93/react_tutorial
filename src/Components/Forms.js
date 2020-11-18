@@ -6,7 +6,8 @@ class Forms extends React.Component {
         this.state = {
             counter: 0,
             value: '',
-            firstName: ""
+            firstName: "",
+            lastName: ""
         }
         this.handleCounter = this.handleCounter.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -28,7 +29,7 @@ class Forms extends React.Component {
     handleInputChange(event) {
 
         this.setState({
-            firstName: event.target.value
+            [event.target.name]: event.target.value
         })
     }
     render() {
@@ -50,9 +51,11 @@ class Forms extends React.Component {
                     <input type="submit" value="Submit" />
                 </form>
                 <form>
-                    <input type="text" placeholder="First Name" onChange={this.handleInputChange} />
+                    <input type="text" name="firstName" placeholder="First Name" onChange={this.handleInputChange} />
+                    <br></br>
+                    <input type="text" name="lastName" placeholder="Last Name" onChange={this.handleInputChange} />
                 </form>
-                <h1> {this.state.firstName}</h1>
+                <h1> {this.state.firstName} {this.state.lastName}</h1>
             </div>)
     }
 }
