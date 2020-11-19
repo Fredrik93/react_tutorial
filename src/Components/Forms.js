@@ -75,52 +75,55 @@ class Forms extends React.Component {
 
                         onChange={this.handleInputChange} />
                 </form>
-                <h1> {this.state.firstName} {this.state.lastName}</h1>
-                <textarea value="some text" onChange={this.handleChange}
-                />
-                <br />
-                <label>
-                    <input
-                        type="checkbox"
-                        name="isFriendly"
-                        checked={this.state.isFriendly}
-                        onChange={this.handleChange}
-                    />is friendly?
+                <form>
+                    <h1> {this.state.firstName} {this.state.lastName}</h1>
+                    <textarea value="some text" onChange={this.handleChange}
+                    />
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="isFriendly"
+                            checked={this.state.isFriendly}
+                            onChange={this.handleChange}
+                        />is friendly?
                 </label>
 
-                <br />
-                <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="male"
-                        checked={this.state.gender === 'male'}
-                        onChange={this.handleChange}
-                    /> Male
+                    <br />
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="male"
+                            checked={this.state.gender === 'male'}
+                            onChange={this.handleChange}
+                        /> Male
                 </label>
-                <br />
-                <label>
-                    <input
-                        type="radio"
-                        name="gender"
-                        value="female"
-                        checked={this.state.gender === 'female'}
-                        onChange={this.handleChange}
-                    /> Female
+                    <br />
+                    <label>
+                        <input
+                            type="radio"
+                            name="gender"
+                            value="female"
+                            checked={this.state.gender === 'female'}
+                            onChange={this.handleChange}
+                        /> Female
                 </label>
-                <h3> You are a {this.state.gender}</h3>
-                <br />
-                <label>Favorite color: </label>
-                <select value={this.state.favColor}
-                    onChange={this.handleChange}
-                    name="favColor"
-                >
-                    <option value="blue">Blue</option>
-                    <option value="yellow">Yellow</option>
-                    <option value="green">green</option>
-                    <option value="white">white</option>
-                </select>
-                <h3>Your favourite color is {this.state.favColor}</h3>
+                    <h3> You are a {this.state.gender}</h3>
+                    <br />
+                    <label>Favorite color: </label>
+                    <select value={this.state.favColor}
+                        onChange={this.handleChange}
+                        name="favColor"
+                    >
+                        <option value="blue">Blue</option>
+                        <option value="yellow">Yellow</option>
+                        <option value="green">green</option>
+                        <option value="white">white</option>
+                    </select>
+                    <h3>Your favourite color is {this.state.favColor}</h3>
+                    <button>Submit</button>
+                </form>
             </div>)
     }
 }
