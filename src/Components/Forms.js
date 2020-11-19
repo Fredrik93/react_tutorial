@@ -84,6 +84,29 @@ class Forms extends React.Component {
                         onChange={this.handleChange}
                     />is friendly?
                 </label>
+
+                <br />
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="male"
+                        checked={this.state.isFriendly}
+                        onChange={this.handleChange}
+                    /> Male
+                </label>
+                <br />
+                <label>
+                    <input
+                        type="radio"
+                        name="gender"
+                        value="female"
+                        checked={this.state.isFriendly}
+                        onChange={this.handleChange}
+                    /> Female
+                </label>
+
+
             </div>)
     }
 }
