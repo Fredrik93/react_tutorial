@@ -7,7 +7,8 @@ class Forms extends React.Component {
             counter: 0,
             value: '',
             firstName: "",
-            lastName: ""
+            lastName: "",
+            isFriendly: true
         }
         this.handleCounter = this.handleCounter.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -15,7 +16,10 @@ class Forms extends React.Component {
         this.handleInputChange = this.handleInputChange.bind(this)
     }
     handleChange(event) {
-        this.setState({ value: event.target.value })
+        const { name, value, type, checked } = event.target
+        type === "checkbox" ? this.setState({ [name]: checked }) : this.setState({
+            [name]: value
+        })
     }
     handleCounter() {
         this.setState((prevState) => {
@@ -66,10 +70,20 @@ class Forms extends React.Component {
                         value={this.state.lastName}
                         name="lastName"
                         placeholder="Last Name"
+
                         onChange={this.handleInputChange} />
                 </form>
                 <h1> {this.state.firstName} {this.state.lastName}</h1>
-                <textarea value="some text" />
+                <textarea value="some text" onChange={this.handleChange}
+                />
+                <br />
+                <label>
+                    <input
+                        type="checkbox"
+                        checked={this.state.isFriendly}
+                        onChange={this.handleChange}
+                    />is friendly?
+                </label>
             </div>)
     }
 }
