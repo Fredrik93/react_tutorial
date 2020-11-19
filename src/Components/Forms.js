@@ -69,6 +69,7 @@ class Forms extends React.Component {
                         onChange={this.handleInputChange} />
                 </form>
                 <h1> {this.state.firstName} {this.state.lastName}</h1>
+                <textarea value="some text" />
             </div>)
     }
 }
