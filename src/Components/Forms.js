@@ -9,7 +9,8 @@ class Forms extends React.Component {
             firstName: "",
             lastName: "",
             isFriendly: true,
-            gender: ""
+            gender: "",
+            favColor: "blue"
         }
         this.handleCounter = this.handleCounter.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -108,7 +109,20 @@ class Forms extends React.Component {
                     /> Female
                 </label>
                 <h3> You are a {this.state.gender}</h3>
+                <br />
+                <label>Favorite color: </label>
+                <select value={this.state.favColor}
+                    onChange={this.handleChange}
+                    name="favColor"
+                >
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">green</option>
+                    <option value="white">white</option>
 
+
+
+                </select>
             </div>)
     }
 }
