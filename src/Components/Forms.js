@@ -8,7 +8,8 @@ class Forms extends React.Component {
             value: '',
             firstName: "",
             lastName: "",
-            isFriendly: true
+            isFriendly: true,
+            gender: ""
         }
         this.handleCounter = this.handleCounter.bind(this)
         this.handleChange = this.handleChange.bind(this)
@@ -80,6 +81,7 @@ class Forms extends React.Component {
                 <label>
                     <input
                         type="checkbox"
+                        name="isFriendly"
                         checked={this.state.isFriendly}
                         onChange={this.handleChange}
                     />is friendly?
@@ -91,7 +93,7 @@ class Forms extends React.Component {
                         type="radio"
                         name="gender"
                         value="male"
-                        checked={this.state.isFriendly}
+                        checked={this.state.gender === 'male'}
                         onChange={this.handleChange}
                     /> Male
                 </label>
@@ -101,11 +103,11 @@ class Forms extends React.Component {
                         type="radio"
                         name="gender"
                         value="female"
-                        checked={this.state.isFriendly}
+                        checked={this.state.gender === 'female'}
                         onChange={this.handleChange}
                     /> Female
                 </label>
-
+                <h3> You are a {this.state.gender}</h3>
 
             </div>)
     }
