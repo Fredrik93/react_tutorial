@@ -119,10 +119,8 @@ class Forms extends React.Component {
                     <option value="yellow">Yellow</option>
                     <option value="green">green</option>
                     <option value="white">white</option>
-
-
-
                 </select>
+                <h3>Your favourite color is {this.state.favColor}</h3>
             </div>)
     }
 }
