@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 class Forms extends React.Component {
     constructor() {
         super()
@@ -46,6 +46,19 @@ class Forms extends React.Component {
     //     })
     // }
     render() {
+        const stylingBtn = {
+            backgroundColor: "#4CAF50",
+            border: "none",
+            color: "white",
+            padding: "15px 32px",
+            textAlign: "center",
+            textDecoration: "none",
+            display: "inline-block",
+            fontSize: "16px",
+            marginTop: "5vh",
+            borderRadius: "5px"
+
+        }
         const styling = {
             paddingTop: "20vh",
             textAlign: "center",
@@ -124,6 +137,7 @@ class Forms extends React.Component {
                     <h3>Your favourite color is {this.state.favColor}</h3>
                     <button>Submit</button>
                 </form>
+                <Link to="/formspractice" style={stylingBtn}>View test project </Link>
             </div>)
     }
 }

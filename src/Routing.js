@@ -16,6 +16,7 @@ import Counter from "./Components/Counter";
 import ApiData from "./Components/ApiData";
 import Conditional from "./Components/ConditionalRendering/Conditional";
 import Forms from "./Components/Forms";
+import FormsPractice from "./Components/FormsPractice";
 
 function Routing() {
     return (
@@ -42,6 +43,7 @@ function Routing() {
                                 <Route path="/apis" component={ApiData} />
                                 <Route path="/conditional" component={Conditional} />
                                 <Route path="/form" component={Forms} />
+                                <Route path="/formspractice" component={FormsPractice} />
                             </div>
                         </div>
                     </>
