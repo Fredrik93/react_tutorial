@@ -6,20 +6,28 @@ class FormsPractice extends React.Component {
         this.state = {
             firstName: '',
             lastName: '',
-            age: 0
+            age: ''
         }
+        this.handleChange = this.handleChange.bind(this)
+
     }
-    handleChange() {
-        console.log("lal")
+
+    handleChange(event) {
+        const { name, value } = event.target
+        this.setState({
+            [name]: value
+        })
+
     }
+
     render() {
 
         return (
             <main>
                 <form>
-                    <input placeholder="First Name" onChange={this.handleChange} /> name:{this.state.firstName} < br />
-                    <input placeholder="Last Name" onChange={this.handleChange} /> < br />
-                    <input placeholder="Age" onChange={this.handleChange} /> < br />
+                    <input placeholder="First Name" name="firstName" onChange={this.handleChange} /> name:{this.state.firstName} < br />
+                    <input placeholder="Last Name" name="lastName" onChange={this.handleChange} /> Lastname: {this.state.lastName} < br />
+                    <input placeholder="Age" age="age" onChange={this.handleChange} /> Age:  {this.state.age} < br />
                     < br />
                 </form>
             </main>
