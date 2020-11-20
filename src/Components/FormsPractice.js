@@ -25,11 +25,19 @@ class FormsPractice extends React.Component {
         return (
             <main>
                 <form>
-                    <input placeholder="First Name" name="firstName" onChange={this.handleChange} /> name:{this.state.firstName} < br />
-                    <input placeholder="Last Name" name="lastName" onChange={this.handleChange} /> Lastname: {this.state.lastName} < br />
-                    <input placeholder="Age" age="age" onChange={this.handleChange} /> Age:  {this.state.age} < br />
+                    <input placeholder="First Name" name="firstName" onChange={this.handleChange} /> < br />
+                    <input placeholder="Last Name" name="lastName" onChange={this.handleChange} />< br />
+                    <input placeholder="Age" type="number" name="age" onChange={this.handleChange} />< br />
                     < br />
                 </form>
+
+
+                <h1>Entered Information </h1>
+                <div>
+                    <h3>Your name : {this.state.firstName} {this.state.lastName}</h3>
+                    <h3>Your age : {this.state.age}</h3>
+                </div>
+
             </main>
         )
     }
