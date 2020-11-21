@@ -36,6 +36,9 @@ class FormsPractice extends React.Component {
                 <div>
                     <h3>Your name : {this.state.firstName} {this.state.lastName}</h3>
                     <h3>Your age : {this.state.age}</h3>
+                    <label>  <input type="radio" name="male" /> Male</label>
+                    <label>  <input type="radio" name="female" /> Female</label>
+
                 </div>
 
             </main>
