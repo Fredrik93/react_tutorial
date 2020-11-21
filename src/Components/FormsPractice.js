@@ -23,8 +23,8 @@ class FormsPractice extends React.Component {
     render() {
 
         return (
-            <main>
-                <form>
+            <main style={{ textAlign: "center", marginTop: "10vh" }} >
+                <form >
                     <input placeholder="First Name" name="firstName" onChange={this.handleChange} /> < br />
                     <input placeholder="Last Name" name="lastName" onChange={this.handleChange} />< br />
                     <input placeholder="Age" type="number" name="age" onChange={this.handleChange} />< br />
@@ -36,10 +36,10 @@ class FormsPractice extends React.Component {
                 <div>
                     <h3>Your name : {this.state.firstName} {this.state.lastName}</h3>
                     <h3>Your age : {this.state.age}</h3>
-                    <label>  <input type="radio" name="male" /> Male</label>
-                    <label>  <input type="radio" name="female" /> Female</label>
-
+                    <label>  <input type="radio" name="gender" value="male" /> Male</label> < br />
+                    <label>  <input type="radio" name="gender" value="female" /> Female</label>
                 </div>
+                <br /> <button>Submit</button>
 
             </main>
         )
