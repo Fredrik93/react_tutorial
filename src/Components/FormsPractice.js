@@ -24,9 +24,9 @@ class FormsPractice extends React.Component {
         return (
             <main style={{ textAlign: "center", marginTop: "10vh" }} >
                 <form >
-                    <input placeholder="First Name" name="firstName" onChange={this.handleChange} /> < br />
-                    <input placeholder="Last Name" name="lastName" onChange={this.handleChange} />< br />
-                    <input placeholder="Age" type="number" name="age" onChange={this.handleChange} />< br />
+                    <input style={{ margin: "1vh" }} placeholder="First Name" name="firstName" onChange={this.handleChange} /> < br />
+                    <input style={{ margin: "1vh" }} placeholder="Last Name" name="lastName" onChange={this.handleChange} />< br />
+                    <input style={{ margin: "1vh", width: "6vh" }} placeholder="Age" type="number" name="age" onChange={this.handleChange} />< br />
                     <label>
                         <input
                             type="radio"
@@ -35,6 +35,7 @@ class FormsPractice extends React.Component {
                             onChange={this.handleChange}
                         /> Male</label>
                     < br />
+
                     <label>
                         <input
                             type="radio"
