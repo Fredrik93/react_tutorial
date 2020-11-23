@@ -49,6 +49,7 @@ class FormsPractice extends React.Component {
                             type="radio"
                             name="gender"
                             value="male"
+                            checked={this.state.gender === "male"}
                             onChange={this.handleChange}
                         /> Male</label>
                     < br />
@@ -58,6 +59,7 @@ class FormsPractice extends React.Component {
                             type="radio"
                             name="gender"
                             value="female"
+                            checked={this.state.gender === "female"}
                             onChange={this.handleChange}
                         /> Female</label>
 
