@@ -1,5 +1,4 @@
 import React from 'react'
-import { ThemeProvider } from 'react-bootstrap'
 
 class FormsPractice extends React.Component {
     constructor() {
@@ -8,7 +7,9 @@ class FormsPractice extends React.Component {
             firstName: '',
             lastName: '',
             age: '',
-            gender: ''
+            gender: '',
+            destination: "",
+            dietaryRestrictions: []
         }
         this.handleChange = this.handleChange.bind(this)
 
@@ -24,9 +25,25 @@ class FormsPractice extends React.Component {
         return (
             <main style={{ textAlign: "center", marginTop: "10vh" }} >
                 <form >
-                    <input style={{ margin: "1vh" }} placeholder="First Name" name="firstName" onChange={this.handleChange} /> < br />
-                    <input style={{ margin: "1vh" }} placeholder="Last Name" name="lastName" onChange={this.handleChange} />< br />
-                    <input style={{ margin: "1vh", width: "6vh" }} placeholder="Age" type="number" name="age" onChange={this.handleChange} />< br />
+                    <input style={{ margin: "1vh" }}
+                        value={this.state.firstName}
+                        placeholder="First Name"
+                        name="firstName"
+                        onChange={this.handleChange}
+                    /> < br />
+                    <input style={{ margin: "1vh" }}
+                        value={this.state.lastName}
+                        placeholder="Last Name"
+                        name="lastName"
+                        onChange={this.handleChange}
+                    />< br />
+                    <input style={{ margin: "1vh", width: "6vh" }}
+                        value={this.state.age}
+                        placeholder="Age"
+                        type="number"
+                        name="age"
+                        onChange={this.handleChange}
+                    />< br />
                     <label>
                         <input
                             type="radio"
