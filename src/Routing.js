@@ -17,6 +17,7 @@ import ApiData from "./Components/ApiData";
 import Conditional from "./Components/ConditionalRendering/Conditional";
 import Forms from "./Components/Forms";
 import FormsPractice from "./Components/FormsPractice";
+import MemeGenerator from "./Components/MemeGenerator/MemeGenerator";
 
 function Routing() {
     return (
@@ -44,6 +45,7 @@ function Routing() {
                                 <Route path="/conditional" component={Conditional} />
                                 <Route path="/form" component={Forms} />
                                 <Route path="/formspractice" component={FormsPractice} />
+                                <Route path="/memegenerator" component={MemeGenerator} />
                             </div>
                         </div>
                     </>

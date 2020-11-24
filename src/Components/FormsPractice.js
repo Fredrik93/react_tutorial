@@ -39,7 +39,9 @@ class FormsPractice extends React.Component {
     render() {
         return <FormComponent
             handleChange={this.handleChange}
+            //these are doing the same thing but the ... operator is really good. you can also then just say 'props.firstName' instead of props.data.firstName ( in FormComponent)
             data={this.state}
+            {...this.state}
         />
     }
 } export default FormsPractice

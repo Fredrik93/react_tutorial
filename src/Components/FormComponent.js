@@ -6,7 +6,7 @@ function FormComponent(props) {
         <main style={{ textAlign: "center", marginTop: "10vh" }} >
             <form >
                 <input style={{ margin: "1vh" }}
-                    value={props.data.firstName}
+                    value={props.firstName}
                     placeholder="First Name"
                     name="firstName"
                     onChange={props.handleChange}
