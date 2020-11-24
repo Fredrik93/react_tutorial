@@ -1,7 +1,13 @@
 import React from 'react'
 
 class MemeGenerator extends React.Component {
-
+    constructor() {
+        super()
+        this.state = {
+            apiResponse: ""
+        }
+        this.callMyApi = this.callMyApi.bind(this)
+    }
     callMyApi() {
         console.log("lalal")
         fetch("http://localhost:3001/testAPI")
@@ -18,7 +24,8 @@ class MemeGenerator extends React.Component {
         return (
             <>
                 <h1>my Component has Mounted, Check the browser 'console'</h1>
-                <button>Click </button>
+                <p>API :{this.state.apiResponse}</p>
+                <button onClick={this.callMyApi} >Click </button>
             </>)
     }
 }
