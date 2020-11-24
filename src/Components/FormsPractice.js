@@ -9,7 +9,11 @@ class FormsPractice extends React.Component {
             age: '',
             gender: '',
             destination: "",
-            dietaryRestrictions: []
+            dietaryRestrictions: {
+                isVegan: false,
+                isKosher: false,
+                isLactoseFree: false
+            }
         }
         this.handleChange = this.handleChange.bind(this)
 
@@ -73,6 +77,33 @@ class FormsPractice extends React.Component {
                         <option value="South pole" > South Pole</option>
 
                     </select>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="isVegan"
+                            onChange={this.handleChange}
+                            checked={this.state.dietaryRestrictions.isVegan}
+                        /> Vegan ?
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="isKosher"
+                            onChange={this.handleChange}
+                            checked={this.state.dietaryRestrictions.isKosher}
+                        /> Kosher ?
+                    </label>
+                    <br />
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="isLactoseFree"
+                            onChange={this.handleChange}
+                            checked={this.state.dietaryRestrictions.isLactoseFree}
+                        /> Lactose free ?
+                    </label>
                 </form>
 
 
