@@ -113,6 +113,11 @@ class FormsPractice extends React.Component {
                     <h3>Your age : {this.state.age}</h3>
                     <h3>Gender: {this.state.gender}</h3>
                     <h3>Your destination: {this.state.destination}</h3>
+                    <h3> Dietary restrictions:
+                        {this.state.dietaryRestrictions.isVegan ? "Vegan" : null}
+                        {this.state.dietaryRestrictions.isKosher ? "Kosher" : null}
+                        {this.state.dietaryRestrictions.isLactoseFree ? "Lactose Free" : null}
+                    </h3>
                 </div>
                 <br /> <button>Submit</button>
 
