@@ -28,6 +28,7 @@ class ApiData extends React.Component {
         this.setState({ loadMyApi: true })
         this.callStartWarsApi()
         this.testCallApi()
+
     }
 
     render() {
