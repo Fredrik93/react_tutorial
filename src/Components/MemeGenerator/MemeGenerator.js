@@ -16,16 +16,12 @@ class MemeGenerator extends React.Component {
 
     }
 
-    componentDidMount() {
-    }
-
     render() {
 
         return (
             <>
-                <h1>my Component has Mounted, Check the browser 'console'</h1>
-                <p>API :{this.state.apiResponse}</p>
-                <button onClick={this.callMyApi} >Click </button>
+                <p>show api call by clicking button : <br /> {this.state.apiResponse}</p>
+                <button className="btn btn-success" onClick={this.callMyApi} >Click </button>
             </>)
     }
 }
