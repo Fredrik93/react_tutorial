@@ -64,6 +64,15 @@ class FormsPractice extends React.Component {
                         /> Female</label>
 
                     < br />
+                    <select value={this.state.destination} name="destination"
+                        onChange={this.handleChange} >
+                        <option value="" >--- Choose a destination ---</option>
+                        <option value="germany" > Germany</option>
+                        <option value="norway" > Norway</option>
+                        <option value="north pole" > North Pole</option>
+                        <option value="South pole" > South Pole</option>
+
+                    </select>
                 </form>
 
 
@@ -72,6 +81,7 @@ class FormsPractice extends React.Component {
                     <h3>Your name : {this.state.firstName} {this.state.lastName}</h3>
                     <h3>Your age : {this.state.age}</h3>
                     <h3>Gender: {this.state.gender}</h3>
+                    <h3>Your destination: {this.state.destination}</h3>
                 </div>
                 <br /> <button>Submit</button>
 
