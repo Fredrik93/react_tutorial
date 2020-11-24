@@ -23,7 +23,15 @@ class FormsPractice extends React.Component {
         const { name, value, type, checked } = event.target
         type === "checkbox"
             ?
-            this.setState({ [name]: checked })
+            this.setState(prevState => {
+                return {
+                    dietaryRestrictions: {
+                        ...prevState.dietaryRestrictions,
+                        [name]: checked
+                    }
+                }
+
+            })
             :
             this.setState({ [name]: value })
     }
@@ -118,9 +126,9 @@ class FormsPractice extends React.Component {
                     <h3>Gender: {this.state.gender}</h3>
                     <h3>Your destination: {this.state.destination}</h3>
                     <h3> Dietary restrictions:
-                        {this.state.dietaryRestrictions.isVegan ? "Vegan" : null}
-                        {this.state.dietaryRestrictions.isKosher ? "Kosher" : null}
-                        {this.state.dietaryRestrictions.isLactoseFree ? "Lactose Free" : null}
+                        {this.state.dietaryRestrictions.isVegan ? " Vegan " : null}
+                        {this.state.dietaryRestrictions.isKosher ? " Kosher " : null}
+                        {this.state.dietaryRestrictions.isLactoseFree ? " Lactose Free " : null}
                     </h3>
                 </div>
                 <br /> <button>Submit</button>
