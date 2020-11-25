@@ -8,10 +8,19 @@ class MemeGenerator extends Component {
             apiResponse: '',
             topText: '',
             bottomText: '',
-            randomImage: 'https://i.imgflip.com/4nlown.jpg'
+            randomImage: 'https://i.imgflip.com/4nlown.jpg',
+            allMemeImgs: []
         }
         this.callMyApi = this.callMyApi.bind(this)
-        this.callToMemeAPI = this.callToMemeAPI.bind(this)
+    }
+    componentDidMount() {
+        fetch('https://api.imgflip.com/get_memes')
+            .then(response => response.json())
+            .then(response => {
+                const { memes } = response.data
+                console.log(memes[0])
+                this.setState({ allMemeImgs: memes })
+            })
     }
     callMyApi() {
         console.log("lalal")
@@ -20,23 +29,12 @@ class MemeGenerator extends Component {
             .then(response => this.setState({ apiResponse: response }))
     }
 
-    callToMemeAPI() {
-        console.log("memeapi call")
-    }
-
     render() {
 
         return (
             <>
                 <Header />
-                <p>{this.callToMemeAPI()}</p>
-                <img src={this.state.randomImage} alt="meme" />
-                <br />
-                <br />
-                <br />
-                <br />
-                <p className="meme" >show api call by clicking button : <br /> {this.state.apiResponse}</p>
-                <button className="btn btn-success" onClick={this.callMyApi} >Click </button>
+
             </>
         )
     }
