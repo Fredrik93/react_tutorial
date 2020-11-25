@@ -42,6 +42,8 @@ header > p {
     font-size: 6vh;
     margin-left: 25vh;
     margin-top: 7vh;
+    -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #fff;
 
 }
 .bottom{
@@ -49,4 +51,7 @@ header > p {
     font-size: 5vh;
     margin-top: 70vh;
     margin-left: 25vh;
+    -webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #fff;
+
 }
