@@ -34,7 +34,16 @@ class MemeGenerator extends Component {
         return (
             <>
                 <Header />
+                <form className="meme-form" >
+                    <label><input name="topText" onChange={() => { console.log("clicked") }} />Top text : </label>
+                    < br />
+                    <label><input name="bottomText" onChange={() => { console.log("clicked") }} />Bottom text : </label>
+                    <br />
 
+                    <button className="btn btn-danger">
+                        Gen
+                </button>
+                </form>
             </>
         )
     }
