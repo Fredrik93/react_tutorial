@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../memeStyles.css'
 class MemeGenerator extends React.Component {
     constructor() {
         super()
@@ -13,16 +13,16 @@ class MemeGenerator extends React.Component {
         fetch("http://localhost:3001/testAPI")
             .then(response => response.text())
             .then(response => this.setState({ apiResponse: response }))
-
     }
 
     render() {
 
         return (
             <>
-                <p>show api call by clicking button : <br /> {this.state.apiResponse}</p>
+                <p className="meme" >show api call by clicking button : <br /> {this.state.apiResponse}</p>
                 <button className="btn btn-success" onClick={this.callMyApi} >Click </button>
-            </>)
+            </>
+        )
     }
 }
 export default MemeGenerator
