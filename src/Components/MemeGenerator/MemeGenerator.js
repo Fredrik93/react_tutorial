@@ -27,7 +27,9 @@ class MemeGenerator extends Component {
         const { name, value } = event.target
         this.setState({ [name]: value })
     }
-
+    showRandomMeme() {
+        console.log("Clicked")
+    }
     render() {
 
         return (
@@ -47,7 +49,7 @@ class MemeGenerator extends Component {
                         name="bottomText"
                         onChange={this.handleChange}
                         placeholder="Bottom text" />
-                    <button className="btn btn-success">Gen</button>
+                    <button className="btn btn-success" onClick={this.showRandomMeme} >Gen</button>
                 </form>
                 <div className="meme" >
                     <h2 className="top" > {this.state.topText} </h2>
