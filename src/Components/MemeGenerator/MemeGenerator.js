@@ -23,6 +23,7 @@ class MemeGenerator extends Component {
             })
     }
     handleChange(event) {
+        //pull name and value properties from event.target
         const { name, value } = event.target
         this.setState({ [name]: value })
     }
@@ -52,8 +53,12 @@ class MemeGenerator extends Component {
                     <button className="btn btn-danger">
                         Gen  </button>
                 </form>
-                <p>Top text says: {this.state.topText}</p>
-                <p>Bottom text says: {this.state.bottomText}</p>
+                <div className="meme" >
+                    <h2 className="top" > {this.state.topText} </h2>
+                    <img src={this.state.randomImage} alt="someimg" />
+
+                    <h2 className="bottom" > {this.state.bottomText} </h2>
+                </div>
 
             </>
         )

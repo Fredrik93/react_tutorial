@@ -36,3 +36,13 @@ header > p {
    margin-top: 10vh;
    
 }
+.top{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 15vh;
+}
+.bottom{
+    color:whitesmoke;
+    text-align: center;
+    font-size: 15vh;
+}
