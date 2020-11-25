@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../memeStyles.css'
-class MemeGenerator extends React.Component {
+class MemeGenerator extends Component {
     constructor() {
         super()
         this.state = {

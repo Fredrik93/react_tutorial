@@ -1,6 +1,14 @@
 import React from 'react'
 
 function Header() {
-    return <h1>Header </h1>
+    return (
+        <header>
+            <img
+                src="http://www.pngall.com/wp-content/uploads/2016/05/Trollface-PNG.png"
+                alt="memeDog"
+            />
+            <p>Meme Generator</p>
+        </header>
+    )
 }
 export default Header

@@ -1,3 +1,12 @@
+body{
+    margin: 0;
+    border-color: whitesmoke;
+}
+
+
+
+
+
 header {
     height: 100px;
     display: flex;
@@ -13,7 +22,7 @@ header > img {
 header > p {
     font-family: VT323, monospace;
     color: whitesmoke;
-    font-size: 50px;
+    font-size: 15px;
     margin-left:60px;
 }
 .meme{
