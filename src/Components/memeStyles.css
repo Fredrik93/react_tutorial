@@ -2,11 +2,6 @@ body{
     margin: 0;
     border-color: whitesmoke;
 }
-
-
-
-
-
 header {
     height: 100px;
     display: flex;
@@ -35,4 +30,9 @@ header > p {
 }
 .meme > h2 {
     position: absolute;
+}
+.meme-form{
+   text-align: center;
+   margin-top: 10vh;
+   
 }

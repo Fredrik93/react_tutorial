@@ -11,7 +11,7 @@ class MemeGenerator extends Component {
             randomImage: 'https://i.imgflip.com/4nlown.jpg',
             allMemeImgs: []
         }
-        this.callMyApi = this.callMyApi.bind(this)
+        this.handleChange = this.handleChange.bind(this)
     }
     componentDidMount() {
         fetch('https://api.imgflip.com/get_memes')
@@ -22,11 +22,9 @@ class MemeGenerator extends Component {
                 this.setState({ allMemeImgs: memes })
             })
     }
-    callMyApi() {
-        console.log("lalal")
-        fetch("http://localhost:3001/testAPI")
-            .then(response => response.text())
-            .then(response => this.setState({ apiResponse: response }))
+    handleChange(event) {
+        const { name, value } = event.target
+        this.setState({ [name]: value })
     }
 
     render() {
@@ -35,15 +33,28 @@ class MemeGenerator extends Component {
             <>
                 <Header />
                 <form className="meme-form" >
-                    <label><input name="topText" onChange={() => { console.log("clicked") }} />Top text : </label>
+
+                    <label>Top text : <input
+                        name="topText"
+                        onChange={this.handleChange}
+                        type="text"
+                        value={this.state.topText}
+                    /> </label>
                     < br />
-                    <label><input name="bottomText" onChange={() => { console.log("clicked") }} />Bottom text : </label>
+
+                    <label>Bottom text : <input
+                        type="text"
+                        value={this.state.bottomText}
+                        name="bottomText"
+                        onChange={this.handleChange} /> </label>
                     <br />
 
                     <button className="btn btn-danger">
-                        Gen
-                </button>
+                        Gen  </button>
                 </form>
+                <p>Top text says: {this.state.topText}</p>
+                <p>Bottom text says: {this.state.bottomText}</p>
+
             </>
         )
     }
