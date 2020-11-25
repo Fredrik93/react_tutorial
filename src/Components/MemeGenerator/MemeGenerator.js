@@ -12,6 +12,7 @@ class MemeGenerator extends Component {
             allMemeImgs: []
         }
         this.handleChange = this.handleChange.bind(this)
+        this.showRandomMeme = this.showRandomMeme.bind(this)
     }
     componentDidMount() {
         fetch('https://api.imgflip.com/get_memes')
@@ -28,7 +29,9 @@ class MemeGenerator extends Component {
         this.setState({ [name]: value })
     }
     showRandomMeme() {
-        console.log("Clicked")
+        let randNum = Math.floor(Math.random() * 100)
+        console.log(this.state.allMemeImgs[randNum])
+        this.setState({ randomImage: this.state.allMemeImgs[randNum].url })
     }
     render() {
 
@@ -49,12 +52,14 @@ class MemeGenerator extends Component {
                         name="bottomText"
                         onChange={this.handleChange}
                         placeholder="Bottom text" />
-                    <button className="btn btn-success" onClick={this.showRandomMeme} >Gen</button>
                 </form>
+                <button className="btn btn-success" onClick={this.showRandomMeme} >Gen</button>
+
                 <div className="meme" >
                     <h2 className="top" > {this.state.topText} </h2>
                     <h2 className="bottom" > {this.state.bottomText} </h2>
                     <img src={this.state.randomImage} alt="someimg" />
+
 
                 </div>
 
