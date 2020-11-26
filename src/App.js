@@ -7,7 +7,6 @@ function App() {
         <div>
             <Nav />
             <Routing />
-
         </div>
     )
 }

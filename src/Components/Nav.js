@@ -2,6 +2,7 @@ import React from 'react'
 import '../App.css'
 import logo from '../Assets/UIC-logo.png'
 import { Navbar, Nav, NavDropdown, Form, Button, FormControl } from 'react-bootstrap'
+import { Link, BrowserRouter as Router } from 'react-router-dom'
 
 function navigation() {
     const NavStyling = {
@@ -17,7 +18,6 @@ function navigation() {
                 <Nav style={NavStyling} className="mr-auto">
                     <Nav.Link href="/">Home</Nav.Link>
 
-                    <Nav.Link href="/about">About</Nav.Link>
                     <NavDropdown title="Projects" id="basic-nav-dropdown">
                         <NavDropdown.Item href="/projects">All Projects</NavDropdown.Item>
                         <NavDropdown.Item href="/cars">Cars</NavDropdown.Item>

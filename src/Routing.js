@@ -23,7 +23,6 @@ function Routing() {
     return (
         <Router>
             <div >
-
                 <Switch >
                     <>
                         <div  >
