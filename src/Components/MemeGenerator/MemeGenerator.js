@@ -31,7 +31,7 @@ class MemeGenerator extends Component {
     showRandomMeme(event) {
         //this prevents the page from refreshing and setting the image back to default
         event.preventDefault()
-        let randNum = Math.floor(Math.random() * 100)
+        let randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
         console.log(this.state.allMemeImgs[randNum])
         this.setState({ randomImage: this.state.allMemeImgs[randNum].url })
     }
