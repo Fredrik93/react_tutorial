@@ -28,7 +28,9 @@ class MemeGenerator extends Component {
         const { name, value } = event.target
         this.setState({ [name]: value })
     }
-    showRandomMeme() {
+    showRandomMeme(event) {
+        //this prevents the page from refreshing and setting the image back to default
+        event.preventDefault()
         let randNum = Math.floor(Math.random() * 100)
         console.log(this.state.allMemeImgs[randNum])
         this.setState({ randomImage: this.state.allMemeImgs[randNum].url })
@@ -38,7 +40,7 @@ class MemeGenerator extends Component {
         return (
             <>
                 <Header />
-                <form className="meme-form" >
+                <form className="meme-form" onSubmit={this.showRandomMeme}  >
                     <input
                         placeholder="Top text"
                         name="topText"
@@ -52,8 +54,9 @@ class MemeGenerator extends Component {
                         name="bottomText"
                         onChange={this.handleChange}
                         placeholder="Bottom text" />
+                    <button className="btn btn-success" >Generate</button>
+
                 </form>
-                <button className="btn btn-success" onClick={this.showRandomMeme} >Gen</button>
 
                 <div className="meme" >
                     <h2 className="top" > {this.state.topText} </h2>
