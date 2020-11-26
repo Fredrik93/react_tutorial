@@ -2,16 +2,12 @@ import React, { Component } from 'react'
 import Header from '../Header'
 import '../memeStyles.css'
 class MemeGenerator extends Component {
-    constructor() {
-        super()
-        this.state = {
-            apiResponse: '',
-            topText: '',
-            bottomText: '',
-            randomImage: 'https://i.imgflip.com/4nlown.jpg',
-            allMemeImgs: []
-        }
-        this.showRandomMeme = this.showRandomMeme.bind(this)
+    state = {
+        apiResponse: '',
+        topText: '',
+        bottomText: '',
+        randomImage: 'https://i.imgflip.com/4nlown.jpg',
+        allMemeImgs: []
     }
     componentDidMount() {
         fetch('https://api.imgflip.com/get_memes')
@@ -28,7 +24,7 @@ class MemeGenerator extends Component {
         const { name, value } = event.target
         this.setState({ [name]: value })
     }
-    showRandomMeme(event) {
+    showRandomMeme = (event) => {
         //this prevents the page from refreshing and setting the image back to default
         event.preventDefault()
         let randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
