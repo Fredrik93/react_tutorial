@@ -11,7 +11,6 @@ class MemeGenerator extends Component {
             randomImage: 'https://i.imgflip.com/4nlown.jpg',
             allMemeImgs: []
         }
-        this.handleChange = this.handleChange.bind(this)
         this.showRandomMeme = this.showRandomMeme.bind(this)
     }
     componentDidMount() {
@@ -23,7 +22,8 @@ class MemeGenerator extends Component {
                 this.setState({ allMemeImgs: memes })
             })
     }
-    handleChange(event) {
+    //this crazy looking arrow function gives the function a 'lexical 'this' ' which means that we dont need to bind stuff. amazing 
+    handleChange = (event) => {
         //pull name and value properties from event.target
         const { name, value } = event.target
         this.setState({ [name]: value })
