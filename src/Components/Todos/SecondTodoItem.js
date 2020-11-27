@@ -1,9 +1,15 @@
 import React from 'react'
 
 function SecondTodoItem(props) {
+    const style = {
+        borderBottom: "2px solid lightgray",
+        textAlign: "center",
+        marginTop: "10vh",
+
+    }
     return (
         <div>
-            <h2> Chore: {props.chore}  </h2>
+            <h2 style={style}> {props.chore} <input type="checkbox" />  </h2>
         </div>
     )
 } export default SecondTodoItem
