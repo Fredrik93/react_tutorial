@@ -3,8 +3,8 @@ import Item from './SecondTodoItem'
 import todosData from './todosData'
 class SecondTodos extends React.Component {
 
-    showChores = todosData.map(Item => {
-        return Item.chore
+    showChores = todosData.map(dataItem => {
+        return <Item chore={dataItem.chore} key={dataItem.id} />
     })
 
     render() {
