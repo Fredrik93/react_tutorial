@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react'
+import { Link } from 'react-router-dom'
 class Counter extends React.Component {
     constructor() {
         super()
@@ -36,6 +37,7 @@ class Counter extends React.Component {
             justifyContent: 'center',
             marginTop: "15vh",
             fontSize: "20vh",
+            textAlign: "center"
         }
         const stylingButton = {
             display: 'flex',
@@ -43,11 +45,24 @@ class Counter extends React.Component {
             justifyContent: 'center',
             marginTop: "3vh",
         }
+        const stylingLinkBtn = {
+            backgroundColor: "gray",
+            border: "none",
+            color: "white",
+            padding: "15px 32px",
+            textAlign: "center",
+            textDecoration: "none",
+            display: "inline-block",
+            fontSize: "16px",
+            marginTop: "5vh",
+            borderRadius: "5px"
+
+        }
         return (
             <Fragment>
                 <div style={stylingNumber} >
 
-                    <span>{this.state.number}
+                    <span >{this.state.number}
 
                         <div style={stylingButton}>
                             {/* when the method is part of the class we need the 'this.' */}
@@ -57,9 +72,14 @@ class Counter extends React.Component {
                         <div style={stylingButton}>
                             <button className="btn-lg btn-info" onClick={this.decrementSum} > Remove </button>
                         </div>
+
+                        <div >
+                            <Link to="/secondcounter" style={stylingLinkBtn} >Next example </Link>
+
+                        </div>
                     </span>
                 </div>
-            </Fragment>
+            </Fragment >
         )
     }
 }
