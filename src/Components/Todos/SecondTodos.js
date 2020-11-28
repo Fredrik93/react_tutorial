@@ -5,7 +5,7 @@ class SecondTodos extends React.Component {
 
 
     showChores = todosData.map(dataItem => {
-        return <Item chore={dataItem.chore} key={dataItem.id} />
+        return <Item chore={dataItem.chore} completo={true} key={dataItem.id} />
     })
 
     render() {

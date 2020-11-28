@@ -9,7 +9,7 @@ function SecondTodoItem(props) {
     }
     return (
         <div>
-            <h2 style={style}> {props.chore} {/* {props.completedChore} */} <input type="checkbox" />  </h2>
+            <h2 style={style}> {props.chore} <input checked={props.completo} type="checkbox" />  </h2>
         </div>
     )
 } export default SecondTodoItem
