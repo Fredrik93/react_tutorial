@@ -10,13 +10,12 @@ class SecondTodos extends React.Component {
         this.handleChange = this.handleChange.bind(this)
     }
     handleChange() {
-        this.setState((prev) => {
-            console.log(prev)
-        })
+
+        this.setState()
     }
 
     showChores = todosData.map(dataItem => {
-        return <Item chore={dataItem.chore} completo={this.handleChange} key={dataItem.id} />
+        return <Item chore={dataItem.chore} completo={dataItem.completed} key={dataItem.id} />
     })
 
     render() {
