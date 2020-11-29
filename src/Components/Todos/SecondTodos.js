@@ -35,6 +35,6 @@ class SecondTodos extends React.Component {
                 completo={dataItem.completed}
                 key={dataItem.id} />
         })
-        return (<div > {showChores} </div>)
+        return (<div className="todo-list" > {showChores} </div>)
     }
 } export default SecondTodos
