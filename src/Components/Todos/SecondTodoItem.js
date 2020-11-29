@@ -9,7 +9,9 @@ function SecondTodoItem(props) {
     }
     return (
         <div>
-            <h2 style={style}> {props.chore} <input onChange={() => { props.handleChange(props.dataItem.id) }} checked={props.completo} type="checkbox" />  </h2>
+            <h2 style={style}> {props.chore}
+                <input onChange={() => { props.handleChange(props.dataItem.id) }}
+                    checked={props.dataItem.completeo} type="checkbox" />  </h2>
         </div>
     )
 } export default SecondTodoItem

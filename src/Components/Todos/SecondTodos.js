@@ -5,7 +5,7 @@ class SecondTodos extends React.Component {
     constructor() {
         super()
         this.state = {
-            completedChores: false,
+            completedChores: '',
             todos: todosData
         }
         this.handleChange = this.handleChange.bind(this)
@@ -24,17 +24,17 @@ class SecondTodos extends React.Component {
         })
     }
 
-    showChores = todosData.map(dataItem => {
-        return <Item
-            handleChange={this.handleChange}
-            chore={dataItem.chore}
-            dataItem={dataItem}
-            completo={dataItem.completed}
-            key={dataItem.id} />
-    })
+
 
     render() {
-
-        return (<div > {this.showChores} </div>)
+        const showChores = todosData.map(dataItem => {
+            return <Item
+                handleChange={this.handleChange}
+                chore={dataItem.chore}
+                dataItem={dataItem}
+                completo={dataItem.completed}
+                key={dataItem.id} />
+        })
+        return (<div > {showChores} </div>)
     }
 } export default SecondTodos
